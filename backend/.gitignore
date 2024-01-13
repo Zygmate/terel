@@ -1,0 +1,14 @@
+# ---> Kate
+# Swap Files #
+.*.kate-swp
+.swp.*
+
+# ---> Nim
+nimcache/
+nimblecache/
+htmldocs/
+*_[0-9][0-9]*.nims
+
+# Binaries and Temp Files
+/terel
+/terel_debug
