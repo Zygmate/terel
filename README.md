@@ -30,12 +30,12 @@ The community asked for a character builder, so here it is.
 * Browser
 
 ## Project Status
-Before Pre-Alpha.
+Before Pre-Alpha.\
 Unstable API.
 
 
 ## License
-Copyright © 2024  Akito <the@akito.ooo>
+Copyright © 2024  Akito <the@akito.ooo>\
 Copyright © 2024  Edoardo Vicenzi <evicenzi357@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
