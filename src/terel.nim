@@ -3,14 +3,14 @@
 ]##
 
 import
-  nimpackage/[
+  terel/[
     meta,
     logg,
     #utils,
     #configurator,
     #database
   ],
-  nimpackage/model/[
+  terel/model/[
     #configuration,
   ],
   std/[
@@ -20,7 +20,7 @@ import
     #zero_functional
   ]
 
-let logger = getLogger("nimpackage")
+let logger = getLogger("terel")
 
 when isMainModule:
   logger.log(lvlNotice, "appVersion:  " & appVersion)

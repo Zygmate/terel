@@ -2,10 +2,10 @@
 
 version       = "0.1.0"
 author        = "Akito <the@akito.ooo>"
-description   = "An awesome Nimble package."
+description   = "Ter'El - Arcanum Character Builder."
 license       = "GPL-3.0-or-later"
 srcDir        = "src"
-bin           = @["nimpackage"]
+bin           = @["terel"]
 skipFiles     = @["README.md"]
 skipExt       = @["nim"]
 backend       = "c"
@@ -44,9 +44,9 @@ task fbuild, "Build project.":
             --define:danger \
             --opt:speed \
             --excessiveStackTrace:off \
-            --out:nimpackage \
-            src/nimpackage && \
-          strip nimpackage \
+            --out:terel \
+            src/terel && \
+          strip terel \
             --strip-all \
             --remove-section=.comment \
             --remove-section=.note.gnu.gold-version \
@@ -64,8 +64,8 @@ task dbuild, "Debug Build project.":
             --debuginfo:on \
             --opt:none \
             --excessiveStackTrace:off \
-            --out:nimpackage_debug \
-            src/nimpackage
+            --out:terel_debug \
+            src/terel
        """
 task docker_build_prod, "Build Production Docker.":
   exec &"""nim c \
@@ -78,7 +78,7 @@ task docker_build_prod, "Build Production Docker.":
             --opt:speed \
             --excessiveStackTrace:off \
             --out:app \
-            src/nimpackage && \
+            src/terel && \
           strip app \
             --strip-all \
             --remove-section=.comment \
@@ -100,5 +100,5 @@ task docker_build_debug, "Build Debug Docker.":
             --opt:none \
             --excessiveStackTrace:off \
             --out:app \
-            src/nimpackage
+            src/terel
        """
