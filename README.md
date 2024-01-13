@@ -1,7 +1,8 @@
 [![Nimble](https://raw.githubusercontent.com/yglukhov/nimble-tag/master/nimble.png)](https://nimble.directory/pkg/terel)
 
 [![Source](https://img.shields.io/badge/project-source-2a2f33?style=plastic)](https://github.com/Zygmate/terel)
-[![Language](https://img.shields.io/badge/language-Nim-orange.svg?style=plastic)](https://nim-lang.org/)
+
+[![Language](https://img.shields.io/badge/Nim-orange.svg?style=plastic&logo=Nim)](https://nim-lang.org/) [![Language](https://img.shields.io/badge/JavaScript-blue?logo=javascript)](https://nim-lang.org/)
 
 ![Last Commit](https://img.shields.io/github/last-commit/theAkito/terel?style=plastic)
 
@@ -9,29 +10,33 @@
 [![Liberapay patrons](https://img.shields.io/liberapay/patrons/Akito?style=plastic)](https://liberapay.com/Akito/)
 
 ## What
-This is a base template for App projects written in Nim.
+
+![](https://static.wikia.nocookie.net/arcanum/images/5/58/Arcanum1.png/revision/latest?cb=20140626115559)
+
+This is a Character Builder end-user application, useful for players of [Arcanum: Of Steamworks and Magick Obscura](https://arcanum.fandom.com/wiki/Arcanum:_Of_Steamworks_and_Magick_Obscura_Wiki), released in 2001 by [Troika Games](https://web.archive.org/web/20050728000806/http://www.troikagames.com/). An RPG, set in an alternative steampunk universe, featuring non- and semi-human races, magick and technology.
+
+This work is not in any way affiliated or endorsed by the original authors of the game. This is a hobby project for your personal use.
 
 ## Why
-Allows kickstarting new projects, without fiddling around with metadata basics.
+The community asked for a character builder, so here it is.
 
 ## How
-Select this is a template, when creating a new Git repository through a Git WebUI.
+[Download the latest release](https://github.com/Zygmate/terel/releases/latest) and run it on your computer.
 
 ## Where
-Linux via Docker
-
-## Goals
-* Reliability
+* Linux
+* Windows
+* macOS
+* Browser
 
 ## Project Status
 Before Pre-Alpha.
 Unstable API.
 
-## TODO
-* Always improve
 
 ## License
-Copyright © 2023  Akito <the@akito.ooo>
+Copyright © 2024  Akito <the@akito.ooo>
+Copyright © 2024  Edoardo Vicenzi <evicenzi357@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
