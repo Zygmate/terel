@@ -22,21 +22,28 @@ import
     mummy/routers
   ]
 
+const
+  serverPort = 58111
+  httpCodeOK = 200
+
 let logger = getLogger("terel")
+
+template initHeaders =
+  var headers {.inject.}: HttpHeaders
+  headers["Content-Type"] = "application/json"
 
 when isMainModule:
   logger.log(lvlNotice, "appVersion:  " & appVersion)
   logger.log(lvlNotice, "appRevision: " & appRevision)
   logger.log(lvlNotice, "appDate:     " & appDate)
 
-  proc indexHandler(request: Request) =
-    var headers: HttpHeaders
-    headers["Content-Type"] = "application/json"
-    request.respond(200, headers, """{ "msg": "Hello, World!" }""")
+  proc testConnection(request: Request) =
+    initHeaders
+    request.respond(httpCodeOK, headers, """{ "msg": "Hello, World!" }""")
 
   var router: Router
-  router.get("/", indexHandler)
+  router.get("/test", testConnection)
 
   let server = newServer(router)
-  echo "Serving on http://localhost:8080"
-  server.serve(Port(8080))
+  logger.log lvlInfo, "Serving on http://127.0.0.1:" & $serverPort
+  server.serve(serverPort.Port)
