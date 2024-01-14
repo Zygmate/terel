@@ -1,0 +1,57 @@
+name	techDiscipline	minIN	comp1	comp2	result
+healing salve	herbology	5	kadura stem	ginka root	Restores 20 Health Points (HP), 5 units are made
+fatigue restorer	herbology	8	coca leaves	tobacco leaves	Restores 20 Fatigue Points, 4 units are made
+poison cure	herbology	11	venom	kadura stem	Removes 80 Poison level, 3 units are made
+fatigue limiter	herbology	13	fatigue restorer	witchbane	Halved Fatigue consumption, 2 units are made
+accelerate healing	herbology	15	healing salve	coca leaves	Slowly regenerates 25 Health Points over the course of 90 seconds, 1 unit is made
+wonder drug	herbology	17	accelerate healing	poppy flowers	Restores 60 Health and Fatigue Points, 1 unit is made
+cure all	herbology	19	wonder drug	big chief snake oil	Fully restores Health and Fatigue Points, and removes all Poison, 1 unit is made
+strong poison	chemistry	5	varham's aqua vitae	monroe's cleaner	Adds 290 points of Poison to the target, 3 units are made
+charges	chemistry	8	electrolyte solution	metal plates	Used and consumed for various technological items, 50 units are made
+animal scent	chemistry	11	bromide	morning star perfume	Prevents wild animals from entering combat with the player or their party, and will assist the player in combat against enemies, 1 unit is made
+corrosive acid	chemistry	13	pete's carbolic acid	sulphur pills	Thrown weapon similar to a grenade, 1 unit is made
+hallucinate	chemistry	15	mushroom	varham's aqua vitae	Causes the target to attempt to flee, 1 unit is made
+paralyzer	chemistry	17	potassium chloride	strong poison	Temporarily paralyzes any target, 1 unit is made
+anaesthisizer	chemistry	19	hallucinate	bromide	Causes the target to fall asleep, 1 unit is made
+electric light	electric	5	lantern	filament	Illuminates the area around the character equipping it, scaling with TA
+charged ring	electric	8	copper ring	capacitor	2 Dexterity, scaling with TA
+flow spectrometer	electric	11	small electrical parts	compass	Detects all non-magickal traps within the character's field of vision while equipped, requires charges
+shocking staff	electric	13	large capacitor	staff	Melee weapon; inflicts 5-10 additional Electrical Damage, requires charges
+chapeu of magnetic inversion	electric	15	electrical coil	top hat	DR 20
+healing jacket	electric	17	electrical harness	leather armour	AC 8, DR 14, FR 5, Restores 4 Health Points (HP) per 5 seconds
+tesla rod	electric	19	tesla coil	shocking staff	Treated as a Firearm. Deals 10-40 additional Electrical Damage, requires charges
+molotov cocktail	explosives	5	fuel	rag	Causes AoE Fire Damage and pushback, 1 unit is made
+flash grenade	explosives	8	magnesium	wine	Causes AoE blindness (-30% TH), 5 units are made
+smoke grenade	explosives	11	tom's fertilizer	ck sugar	Creates a 6x4 area of smoke within which ranged attacks are prevented, 5 units are made
+stun grenade	explosives	13	stearic acis	saltpeter	Stuns all characters in the blast radius, 4 units are made
+explosive grenade	explosives	15	black powder	metal can	Causes AoE physical damage, 3 units are made
+fire obstruction	explosives	17	kerosene	liquid soap	Creates a 3x3 area of fire damage lasting about 10 seconds, 3 units are made
+dynamite	explosives	19	nitroglycerin	saltpeter	Used and placed, not thrown, dealing AoE Physical Damage, 1 unit is made
+hand crafted flintlock	gun smithy	5	broken flintlock pistol	small metal tub	D 2-6; FT 1-4; ТН +5; RNG 15; speed 5
+fine revolver	gun smithy	8	revolver parts	revolver chamber	D 3-12; FT 3-9; ТН +15; RNG 15; speed 12
+repeater rifle	gun smithy	11	hunting rifle	revolver chamber	D 2-10; FT 1-5; RNG 15; speed 12; 2 bullets per shot
+hushed revolver	gun smithy	13	fine revolver	engine muffler	D 2-9; FT 2-5; RNG 9; speed 8
+looking glass rifle	gun smithy	15	marksman's rifle	looking glass	D 40-40; FT 40-40; TH +20; RNG 25; speed 1
+hand cannon	gun smithy	17	clarington rifle	fancy pistol	D 5-20; FT 1-10; RNG 12; speed 8
+elephant gun	gun smithy	19	hunting rifle	big pipe	D 20-40; FT 1-10; RNG 15; speed 4
+spike trap	mechanical	5	railroad spike	large spring	Causes passive damage, 3 units are made
+trap springer	mechanical	8	metal casing	small spring	Disarms trapped containers, 3 units are made
+auto skeleton key	mechanical	11	lockpicks	small spring	Increases Pick Locks skill by 10%, 1 unit made
+eye gear	mechanical	13	pocket watch parts	eyglasses	2 Perception (scales with TA), 1 unit made
+bear trap	mechanical	15	metal clamp	large spring	Causes passive damage and Immobilizes a target, 3 units are made
+clockwork decoy	mechanical	17	clockwork parts	small spring	Distracts NPCs from the player character, 2 units are made
+mechanized arachnid	mechanical	19	small steam engine	large gears	Creates a free, mechanical follower, 1 unit is made
+pure ore	smithy	5	iron ore	steel	Quest Item and crafting ingredient
+balanced sword	smithy	8	pure ore	fine hilt and guard	3-12 HD, 3-9 FT, 18 SP, 40 WE, 100 QU
+feather-weight axe	smithy	11	dwarven ore	oak axe handle	1-16 HD, 3-11 FT, 12 SP, 70 WE, 100 QU
+dwarven gauntlets	smithy	13	sheet metal	leather gloves	3 AC, 5 DR, 7 D, Wgt 15, HPs 100
+helmet of vision	smithy	15	great helm	leather straps	3 AC, 7 DR, Wgt 50, HPs 130, no Perception penalty
+feather-weight chainmail	smithy	17	spool of heavy wire	leather armor	13 AC, 25 DR, 5 FR, -10 ER, -25 NP, 270 WE, 200 QU
+elite platemail	smithy	19	dwarven steel	feather-weight chainmail	20 AC, 40 DR, 30 FR,-35 NP, 800 WE, 400 QU
+elixir of persuasion	therapeutics	5	migraine cure	thermometer	Increases Persuasion +2/20 for 4 hours, 3 units are made
+elixir of physical prowess	therapeutics	8	famous blood pills	spirit of camphor	2 Strength for 4 hours, 3 unites are made
+liquid of awareness	therapeutics	11	migrain cure	doolittle's glyceride	2 Perception for 4 hours, 3 units are made
+tonic of increased reflexes	therapeutics	13	tincture of arnica	rheumathism cure	2 Dexterity for 4 hours, 3 units are made
+mind marvel	therapeutics	15	nerve pills	elixir of persuasion	2 Intelligence, Willpower, Perception, Charisma for 4 hours, 1 unit is made
+energizer	therapeutics	17	quinine	elixire of physical prowess	2 Strength, Constitution, Dexterity, Beauty for 4 hours, 1 unit is made
+revitalizer	therapeutics	19	mind marvel	energizer	2 to all Stats for 3 hours, 1 unit is made

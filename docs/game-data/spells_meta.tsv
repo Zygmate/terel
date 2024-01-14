@@ -1,0 +1,81 @@
+name	college	minLVL	minWP	energy	energyMaintainancePerTenSec	isStackable	desc
+Disarm	conveyance	1	6	5	0	FALSE	This spell knocks the target's weapon out of their hands, and with a high MA the caster inflicts minor damage. The spell cannot be resisted.
+Unlocking Cantrip	conveyance	1	9	10	0	FALSE	Unlocking Cantrip opens the locks on doors and containers. Note that any Traps on a locked item are unaffected by this spell, and that Magickally Held items must instead be opened with the 2nd level Meta spell Disperse Magick.
+Unseen Force	conveyance	5	12	15	0	FALSE	This spell pushes the target five tiles away from the caster, and can cause minor damage. Living beings, corpses, and objects weighing less than 5 stone can be pushed, but not stationary objects or containers.
+Spatial Distortion	conveyance	10	15	25	0	FALSE	The caster instantly moves to a tile of their choosing. The destination cannot be more than 8 tiles away, must be in their direct line of sight, and free of any intervening obstructions.
+Teleportation	conveyance	15	18	50	0	FALSE	The caster and their companions can teleport to most (but not all) of the marked locations on the World Map.
+Sense alignment	divination	1	6	5	1	FALSE	This spell shows the general alignment of a creature with a picture.
+See Contents	divination	1	9	10	0	FALSE	Shows the contents of a container it is used on, regardless of whether a container is closed, locked or opened.
+Read Aura	divination	5	12	15	0	FALSE	Displays the attributes of a creature it is used on in the form of a character editor screen.
+Sense Hidden	divination	10	15	25	5	FALSE	Allows the player character and their followers to see all traps.
+Divine Magic	divination	15	18	30	0	FALSE	Allows you to identify all the magical properties of one object from the inventory of the caster, equivalent to using the scroll of the same name or paying for identification at a gypsy.
+vitality of air	air	1	6	5	1	TRUE	Target gains +4 to Constitution, regardless of its or the caster's Magickal Aptitude.
+poison vapours	air	1	9	10	5	FALSE	Creates a cloud of poisonous vapours concentrated around the target. Any creature other than the caster and his followers will get 15-50 PD, depending on the Magickal Aptitude of the caster.
+call winds	air	5	12	15	0	FALSE	Causes wind gusts to flow from the caster in all directions, pushing away all nearby creatures and dealing damage if they hit a nearby object or wall.
+body of air	air	10	15	25	2	FALSE	This spell transforms the body of a target into the air, making it transparent.
+call air elemental	air	15	18	50	5	FALSE	Summons an Air Elemental to do the caster's bidding.
+Strength of earth	earth	1	6	5	1	TRUE	Target gains +4 to Strength, regardless of its or the caster's Magickal Aptitude.
+stone throw	earth	1	9	10	0	FALSE	This spell creates a homing stone projectile that inflicts physical damage on the target, including living and inanimate objects.
+wall of stone	earth	5	12	15	1	FALSE	Creates a temporary wall of stone on targeted area while maintain.
+body of stone	earth	10	15	25	2	FALSE	The spell turns the body of a target into stone.
+call earth elemental	earth	15	18	50	5	FALSE	Summons a Earth Elemental to do the caster's bidding.
+agility of fire	fire	1	6	5	1	TRUE	Target gains +4 Dexterity, regardless of its or the caster's Magickal Aptitude.
+wall of fire	fire	1	9	10	1	FALSE	Creates a wall of fire which damages every creature except the caster and the members of his group passing through it for 1-4 damage by fire.
+fireflash	fire	5	12	15	0	FALSE	Creates a classic fireball damaging every creature and their equipment located within two steps from the target (aside from the caster and their party) . Damage is 15-45 FD, but a successful saving throw reduces damage by half.
+body of fire	fire	10	15	25	10	FALSE	Turns the body of a target into fire and flames.
+call of fire	fire	15	18	50	5	FALSE	Summons a Fire Elemental to do the caster's bidding.
+purity of water	water	1	6	5	1	TRUE	Target gains +4 Beauty and any associate reaction modifiers that would come with that, regardless of its or the caster's Magickal Aptitude.
+call fog	water	1	9	10	1	FALSE	This spell creates a billowing mist centered on the target tile, reducing a creature's chance to hit.
+squall of ice	water	5	12	15	5	FALSE	This spell creates a storm of ice and sleet, centered on the target tile. It deals damage over time, much like the Wall of Fire.
+body of water	water	10	25	15	2	FALSE	Turns the body of a target into liquid water.
+call water elemental	water	15	18	50	5	FALSE	Summons a Water Elemental to do the caster's bidding.
+shield protection	force	1	6	5	1	FALSE	This spell creates a deflective energy screen about the target increasing its Armor Class by 10, and also up to 10 50% damage, fire and electrical resistance.
+jolt	force	1	9	10	0	FALSE	When this spell is thrown, a surge of electricity will flow from the caster into all adjacent creatures, causing electrical damage. A successful saving throw will halve this damage.
+wall of force	force	5	12	15	2	FALSE	This spell creates a shimmering wall of force in the specified empty square. This wall is impassable unless dispelled or disintegrated.
+bolt of lightning	force	10	15	25	0	FALSE	This spell creates a bolt of lightning from the caster to the specified tile or target. Any creature struck by the bolt will be subjected to electrical damage, or half that damage if a saving throw is successful.
+disintegrate	force	15	18	50	0	FALSE	This spell completely destroys the target and any inventory that it was carrying. If the target is a creature, then it is killed and cannot be resurrected.
+charm	mental	1	6	5	1	FALSE	This spell increases the target's reaction modifier to the caster.
+stun	mental	1	9	10	0	FALSE	This spell will stun the target which then cannot move or attack for a few seconds.
+drain will	mental	5	12	15	1	TRUE	This spell will cause the target creature's Willpower to drop by half while the spell is maintained.
+nightmare	mental	10	15	20	0	FALSE	This spell causes all creatures within the vicinity of the caster to flee in terror. Those resisting the spell will turn hostile.
+dominate will	mental	15	18	25	6	FALSE	This spell places the mind of the target under the control of the caster with the basic dialogue tree. A successful save or cancelling the spell will cause the target to turn hostile.
+resist magick	meta	1	6	1	1	FALSE	This spell sets the target's magic resistance to 50.
+disperse magick	meta	1	9	0	0	FALSE	This spell cancels existing spell effects on the target, negates the Magelock spell, and dispels summoned creatures.
+dweomer shield	meta	5	12	5	5	FALSE	This spell prevents magic from operating on the target. In addition, it prevents the target from casting any spells in the same way as Bonds of Magick.
+bonds of magick	meta	10	15	5	5	FALSE	This spell prevents the target from casting any spells.
+reflection shield	meta	15	18	5	5	FALSE	This spell creates a protective field and causes any spell to be reflected back to its caster, at additional cost.
+hardened hands	morph	1	6	5	1	FALSE	This spell makes the target creature do +2 more melee damage regardless of Aptitude when the weapon slot is empty.
+weaken	morph	1	9	15	2	FALSE	This spell weakens the substance of the target by reducing its Strength and damage resistance for the duration of the spell.
+shrink	morph	5	12	20	2	FALSE	This spell reduces a creature to half its size.
+flesh to stone	morph	10	15	20	0	FALSE	This spell converts the target to stone temporarily. The target is paralyzed and cannot be physically damaged.
+polymorph	morph	15	18	30	5	FALSE	This spell transforms the target creature into a sheep for as long as the spell is maintained.
+charm beast	nature	1	6	8	0	FALSE	This spell causes every animal in the vicinity to gain a positive reaction to the caster.
+entangle	nature	1	9	5	2	FALSE	This spell imbues a patch of vegetation with motion preventing the target creature from walking.
+control beast	nature	5	12	15	2	FALSE	This spell places the animal under the control of the caster, unless a saving throw is made.
+succour beast	nature	10	15	20	4	FALSE	This spell summons an animal to do the caster's bidding. The type of creature scales with MA.
+regenerate	nature	15	18	25	5	FALSE	This spell greatly increases the heal rate of the caster and all followers.
+harm	necromantic black	1	6	5	0	FALSE	This spell causes damage to the target creature. The damage dealt scales with the caster's Magickal Aptitude.
+conjure spirit	necromantic black	1	9	10	3	FALSE	This spell allows the caster to speak with the spirit of the target corpse. Some corpses can provide information necessary to the main quest and some side quests.
+summon undead	necromantic black	5	12	15	2	FALSE	This spell summons an undead monster to do the caster's bidding. The type of undead scales with the caster's Magickal Aptitude.
+create undead	necromantic black	10	15	20	3	FALSE	This spell animates the target corpse, which will follow the caster.
+quench life	necromantic black	15	18	50	0	FALSE	This spell deals 50-100 damage to the target creature, unless it successfully saves. It cannot be used on Undead.
+minor healing	necromantic white	1	6	5	0	FALSE	This spell heals a small amount of health points of damage to the target.
+halt poison	necromantic white	1	9	8	0	FALSE	This spell reduces the Poison Factor of the target.
+major healing	necromantic white	5	12	20	0	FALSE	This spell heals a large amount of health points of damage to the target. It will also remove scars and heal crippling injuries.
+sanctuary	necromantic white	10	15	15	5	FALSE	This spell causes Undead to ignore the target, unless the target is in combat.
+resurrect	necromantic white	15	18	50	0	FALSE	This spell returns the target creature to life, with full health and a poison level of zero.
+illuminate	phantasm	1	6	3	1	FALSE	This spell increases the light around the target, and reduces skill light penalties.
+flash	phantasm	1	9	10	0	FALSE	This spell lowers the "to hit" percentage of the target by -30%.
+blur sight	phantasm	5	12	15	2	FALSE	This spell increases the caster's Armor Class by +60 (to a maximum of 95).
+phantasmal fiend	phantasm	10	15	20	4	FALSE	This spell summons a version of a Greater Demon to do the caster's bidding.
+invisibility	phantasm	15	18	30	6	FALSE	The target becomes invisible except when attacking.
+plague of insects	summoning	1	6	3	1	FALSE	This spell summons a swarm of insects which surround and slow the target creature.
+orcish champion	summoning	1	9	10	2	FALSE	This spell summons an orc fighter to do the caster's bidding.
+guardian ogre	summoning	5	12	15	3	FALSE	This spell summons a powerful ogre to do the caster's bidding.
+hellgate	summoning	10	15	30	6	FALSE	This spell summons a demon to do the caster's bidding.
+familiar	summoning	15	18	60	0	FALSE	This spell summons a familiar for the caster to do the caster's bidding. The type of Familiar scales with the caster's Magickal Aptitude.
+magelock	temporal	1	6	5	1	FALSE	This spell blocks any portal or container, rendering keys, lock picks, and the Unlocking Cantrip spell useless.
+congeal time	temporal	1	9	10	2	FALSE	This spell halves the base speed of all creatures in the vicinity of the caster who fail their saving throws.
+hasten	temporal	5	12	20	3	FALSE	This spell will double the target creature's base speed.
+stasis	temporal	10	15	25	4	FALSE	This spell paralyzes the target, unless it makes its saving throw.
+tempus fugit	temporal	15	18	40	5	FALSE	This spell adds +10 to the base speed of the caster and his entire group, while slowing down every other creature in the world. Only one instance of Tempus Fugit can be active in the Arcanum universe at a time.
