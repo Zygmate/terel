@@ -16,6 +16,7 @@ backend       = "c"
 requires "nim             >= 2.0.0" ## https://github.com/nim-lang/Nim
 requires "timestamp       >= 0.4.2" ## https://github.com/jackhftang/timestamp.nim
 requires "zero_functional >= 1.3.0" ## https://github.com/zero-functional/zero-functional
+requires "mummy           >= 0.3.6" ## https://github.com/guzba/mummy
 
 
 # Tasks
