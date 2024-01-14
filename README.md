@@ -2,14 +2,14 @@
 
 [![Source](https://img.shields.io/badge/project-source-2a2f33?style=plastic)](https://github.com/Zygmate/terel)
 
-[![Language](https://img.shields.io/badge/Nim-orange.svg?style=plastic&logo=Nim)](https://nim-lang.org/) [![Language](https://img.shields.io/badge/JavaScript-blue?logo=javascript)](https://nim-lang.org/)
+[![Language](https://img.shields.io/badge/Nim-orange.svg?style=plastic&logo=Nim)](https://nim-lang.org/) [![Language](https://img.shields.io/badge/JavaScript-blue.svg?style=plastic&logo=javascript)](https://nim-lang.org/)
 
-![Last Commit](https://img.shields.io/github/last-commit/theAkito/terel?style=plastic)
+![Last Commit](https://img.shields.io/github/last-commit/Zygmate/terel?style=plastic)
 
 [![Licence](https://img.shields.io/badge/license-GPL--3.0-informational?style=plastic)](https://www.gnu.org/licenses/gpl-3.0.txt)
 [![Liberapay patrons](https://img.shields.io/liberapay/patrons/Akito?style=plastic)](https://liberapay.com/Akito/)
 
-## What
+# Ter'El - Arcanum Character Builder
 
 ![](https://static.wikia.nocookie.net/arcanum/images/5/58/Arcanum1.png/revision/latest?cb=20140626115559)
 
