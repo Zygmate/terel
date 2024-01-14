@@ -1,0 +1,1 @@
+# Abstract Documentation about Game Mechanics
