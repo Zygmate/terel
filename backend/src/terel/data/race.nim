@@ -359,3 +359,48 @@ func createHalfOrc*: HalfOrc =
     fatigueCostMultiplierSpells: 1,
     description: "The half-orc are a hybrid Race, the result of interbreeding the orc and the pure-blooded human. Baseline Half-Orcs start with +2 points in both the Melee and Dodge skills, have a +1 bonus to both Strength and Constitution, and gain a +10% resistance to poison. This comes with a cost of -2 points to both Beauty and Charisma."
   )
+
+
+func createHalfElf*: HalfElf =
+  HalfElf(
+    id: -1,
+    strength: 0,
+    intelligence: 0,
+    constitution: -1,
+    willpower: 0,
+    dexterity: 1,
+    perception: 0,
+    beauty: 1,
+    charisma: 0,
+    hasGender: true,
+    technical: 0,
+    magickal: 5,
+    bow: 0,
+    dodge: 0,
+    melee: 0,
+    throwing: 0,
+    backstab: 0,
+    pickpocket: 0,
+    prowling: 0,
+    spottrap: 0,
+    gambling: 0,
+    haggle: 0,
+    heal: 0,
+    persuasion: 0,
+    techMod: -1,
+    repair: 0,
+    firearms: 0,
+    pickLock: 0,
+    disarmtrap: 0,
+    physDmgRes: 0,
+    fatigueDmgRes: 0,
+    magickRes: 0,
+    fireRes: 0,
+    poisonRes: 0,
+    electricalRes: 0,
+    critSuccessChance: 0,
+    negativeReactionMod: 0,
+    allowOneHandGun: true,
+    fatigueCostMultiplierSpells: 1,
+    description: "Half-elves are a hybrid Race, the product of human and elven parents. Half-Elves start with a 5% bonus to magickal aptitude, have a -1 penalty to each technical skill, gain a +1 bonus in both Dexterity and Beauty, but lose -1 point of Constitution."
+  )
