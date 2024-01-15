@@ -690,7 +690,7 @@ While outdoor in open area:
 ### Army Training
 
 >[!warning]
->Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "half-ogres"}).join(", "))`.
+>Available to dwarves, gnomes, halflings, humans, elves, half-elves, half-orcs.
 
 
 >[!quote]
@@ -758,8 +758,7 @@ While outdoor in open area:
 ### Barbarian
 
 >[!warning]
->Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "half-ogres" && race != "elves"}).join(", "))`.
-
+>Available to dwarves, gnomes, halflings, humans, half-elves, half-orcs.
 
 >[!quote]
 >You were raised among a wild barbarian tribe in a far away land. No one knows how or why you came to be passenger aboard the IFS Zephyr, but given your ferocious demeanor, no one tried to find out. You gain bonuses to Strength (+2) and Constitution (+1), and a slight bonus to Melee, while suffering penalties to Intelligence (-1) and Charisma (-2), and a penalty to Haggle. You also possess barbarian armor but less money than other characters.
@@ -785,8 +784,7 @@ While outdoor in open area:
 ### Bookworm
 
 >[!warning]
->Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "half-ogres" && race != "half-orcs"}).join(", "))`.
-
+>Available to dwarves, gnomes, halflings, humans, elves, half-elves.
 
 >[!quote]
 >You have spent most of your life reading. You gain a bonus to Intelligence (+1). Unfortunately, myopia has set in, and you lose a point to Perception (-1).
@@ -824,8 +822,7 @@ While outdoor in open area:
 ### Bully
 
 >[!warning]
->Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "half-ogres" && race != "half-orcs"}).join(", "))`.
-
+>Available to dwarves, gnomes, halflings, humans, elves, half-elves.
 
 >[!quote]
 >You were the class bully, big and dumb. Extortion and intimidation have afforded you a bonus to Strength (+1), but getting people to do your homework for you leaves you with a deficiency in Intelligence (-1).
@@ -839,8 +836,7 @@ While outdoor in open area:
 ### Charlatan's Protégé
 
 >[!warning]
->Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "half-ogres" && race != "half-orcs"}).join(", "))`.
-
+>Available to dwarves, gnomes, halflings, humans, elves, half-elves.
 >[!quote]
 >Having been convinced by a travelling salesman to become his apprentice, you've given up your life in the military academy you were enrolled in. You gain a major bonus to Charisma (+6), but lose some physical Strength (-2) and Constitution (-2), as well as taking slight penalties to all of your Combat Skills.
 
@@ -892,8 +888,7 @@ While outdoor in open area:
 ### Day Mage
 
 >[!warning]
->Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "dwarves"}).join(", "))`.
-
+>Available to dwarves, gnomes, halflings, humans, elves, half-elves.
 
 >[!quote]
 >You were born with a magickal Aptitude that has affinity for the sun. During the day (between the hours of 6 AM and 6 PM), you possess a 20% bonus to your Magickal Aptitude, but at night you suffer a 20% penalty to your Magickal Aptitude
@@ -1152,8 +1147,7 @@ While outdoor in open area:
 ### Magick Allergy
 
 >[!warning]
->Available to dwarves, gnomes, halflings, half-ogres, humans, half-orcs.
-
+>Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "elves" && race != "half-elves"}).join(", "))`.
 
 >[!quote]
 >You are severely allergic to magickal items, such that touching them causes you pain. Therefore, you have been devoted to technology since a young age and have developed a knack for it. You gain a +10% bonus to Technological Aptitude, but you cannot wield ANY magickal items.
@@ -1171,7 +1165,7 @@ While outdoor in open area:
 ### Nature Mage
 
 >[!warning]
->Available to gnomes, halflings, half-ogres, humans, elves, half-elves, half-orcs.
+>Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "dwarves"}).join(", "))`.
 
 >[!quote]
 >You were born with a magickal aptitude that has affinity for nature. While standing on a natural surface, you possess a 20% bonus to Magickal Aptitude. But on a man-made surface, you suffer a 20% penalty to your Magickal Aptitude.
@@ -1186,7 +1180,7 @@ While outdoor in open area:
 ### Night Mage
 
 >[!warning]
->Available to gnomes, halflings, half-ogres, humans, elves, half-elves, half-orcs.
+>Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "dwarves"}).join(", "))`.
 
 >[!quote]
 >You were born with a magickal aptitude that has affinity for the night. At night (between the hours of 6 PM and 6 AM), you possess a 20% bonus to your Magickal Aptitude, but during the day you suffer a 20% penalty to your Magickal Aptitude.
@@ -1265,7 +1259,7 @@ While outdoor in open area:
 ### Sheltered Childhood
 
 >[!warning]
->Available to gnomes, halflings, humans, elves, half-elves, half-orcs.
+>Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "half-ogres" && race != "dwarves"}).join(", "))`.
 
 >[!quote]
 >You were cooed and coddled incessantly as a child. As a result of overprotective parenting, you take a severe penalty to Strength (-6), but, being more sensitive, you have bonuses to Intelligence (+2), Willpower (+2), and Perception (+1).
@@ -1279,7 +1273,7 @@ While outdoor in open area:
 ### Sky Mage
 
 >[!warning]
->Available to gnomes, halflings, half-ogres, humans, elves, half-elves, half-orcs.
+>Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "dwarves"}).join(", "))`.
 
 >[!quote]
 >You were born with a magickal aptitude that has affinity for the open sky. While outside and in clear view of the sky, you possess a 20% bonus to Magickla Aptitude. But while underground, indoors, or even under a heavy forest canopy, you suffer a 20% penalty to your Magickal Aptitude.
@@ -1385,7 +1379,7 @@ While outdoor in open area:
 
 
 
----------------------------------------------------------------------------
+---
 ## Statistics
 
 #### Base Stats
