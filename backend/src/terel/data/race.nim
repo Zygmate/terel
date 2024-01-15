@@ -3,12 +3,12 @@ type
     id*: int
     strength*: int
     intelligence*: int
-    cn*: int
+    constitution*: int
     willpower*: int
     dexterity*: int
-    pe*: int
-    be*: int
-    ch*: int
+    perception*: int
+    beauty*: int
+    charisma*: int
     hasGender*: bool
     technical*: int
     magickal*: int
@@ -53,43 +53,43 @@ type
 func createGnome*: Gnome =
   Gnome(
     id: -1,
-    strength: -1,
-    intelligence: -1,
-    cn: -1,
-    willpower: -1,
-    dexterity: -1,
-    pe: -1,
-    be: -1,
-    ch: -1,
+    strength: 0,
+    intelligence: 0,
+    constitution: -2,
+    willpower: 2,
+    dexterity: 0,
+    perception: 0,
+    beauty: 0,
+    charisma: 0,
     hasGender: false,
-    technical: -1,
-    magickal: -1,
-    bow: -1,
-    dodge: -1,
-    melee: -1,
-    throwing: -1,
-    backstab: -1,
-    pickpocket: -1,
-    prowling: -1,
-    spottrap: -1,
-    gambling: -1,
-    haggle: -1,
-    heal: -1,
-    persuasion: -1,
-    techMod: -1,
-    repair: -1,
-    firearms: -1,
-    pickLock: -1,
-    disarmtrap: -1,
-    physDmgRes: -1,
-    fatigueDmgRes: -1,
-    magickRes: -1,
-    fireRes: -1,
-    poisonRes: -1,
-    electricalRes: -1,
-    critSuccessChance: -1,
-    negativeReactionMod: -1,
+    technical: 0,
+    magickal: 0,
+    bow: 0,
+    dodge: 0,
+    melee: 0,
+    throwing: 0,
+    backstab: 0,
+    pickpocket: 0,
+    prowling: 0,
+    spottrap: 0,
+    gambling: 0,
+    haggle: 0,
+    heal: 0,
+    persuasion: 0,
+    techMod: 0,
+    repair: 0,
+    firearms: 0,
+    pickLock: 0,
+    disarmtrap: 0,
+    physDmgRes: 0,
+    fatigueDmgRes: 0,
+    magickRes: 0,
+    fireRes: 0,
+    poisonRes: 0,
+    electricalRes: 0,
+    critSuccessChance: 0,
+    negativeReactionMod: 10,
     allowOneHandGun: true,
-    fatigueCostMultiplierSpells: -1,
-    description: ""
+    fatigueCostMultiplierSpells: 1,
+    description: "Gnomes, like dwarves and halflings, are a Minute Race. Baseline Gnomes start with a +2 bonus to Willpower, but have a -2 penalty to Constitution. They also gain +2 points to the Haggle skill, and gain +10 to any negative reaction."
   )
