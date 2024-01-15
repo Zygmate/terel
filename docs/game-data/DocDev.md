@@ -4,12 +4,17 @@
 
 [Link to Forum documentation](https://terra-arcanum.com/forums/threads/tutorial-custom-level-schemes.18507/)
 
+### File Acquisition
+
 The auto leveling scheme uses 2 files to work properly [[#gamelevelname.mes]] and [[#gamelevel.mes]]
+This files can be found by undatting Arcanum5.dat and Arcanum4.dat respectively.
+To make them work properly the will need to be added to ./Arcanum of Steamworks and Magick Obscura\data\mes and  ./Arcanum of Steamworks and Magick Obscura\data\rules respectively.
+
 
 ### gamelevelname.mes
 #### Template
 
-[base_template](Assets/gamelevelname.mes)
+[base_template](/gamelevelname.mes)
 
 
 #### Syntax
@@ -33,7 +38,7 @@ A string with ? max characters. If the characters are too many the game will not
 
 #### Template
 
-[base_template](Assets/gamelevel.mes)
+[base_template](gamelevel.mes)
 
 #### Syntax
 
