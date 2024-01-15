@@ -1,0 +1,61 @@
+// you can name 50 advancement schemes, numbered 50 to 99
+
+{0}{No Scheme}
+{50}{Necromancer}
+{51}{Gun Technologist}
+{52}{Air Elementalist}
+{53}{Earth Elementalist}
+{54}{Fire Elementalist}
+{55}{Water Elementalist}
+{56}{Guard}
+{57}{Shopkeeper}
+{58}{Priest}
+{59}{Druid}
+{60}{Summoner}
+{61}{Force Mage}
+{62}{Conveyance Mage}
+{63}{Temporal Thaumaturgist}
+{64}{Morph Mage}
+{65}{Gunfighter-Doctor}
+{66}{Warrior}
+{67}{Warrior Mage Good}
+{68}{Warrior Mage Evil}
+{69}{Pure Melee-Dodge}
+{70}{Standard NPC Scheme}
+{71}{Lower Class NPC}
+{72}{Middle Class NPC}
+{73}{Upper Class NPC}
+{74}{Basic Thief}
+{75}{Melee Heal Guns}
+{76}{Merwin Tumblebrook}
+{77}{Godfrey Castleburger}
+{78}{Horace McGinley}
+{79}{Muck Evil Eye}
+{80}{D'ren L'elor}
+{81}{Solomon Doone}
+{82}{Merik Luggerton}
+{83}{Lugard Bloodstone}
+{84}{Victoria Warrington}
+{85}{B'elan T'Seraa}
+{86}{Clarisse Vorak}
+{87}{Ker'ee Melange}
+{88}{Ruffian}
+{89}{Bowman}
+{90}{Constable}
+{91}{Virgil}
+{92}{Herbalist}
+{93}{Magnus}
+{94}{Franklin}
+{95}{Jayna Stiles}
+{96}{Vollinger}
+{97}{Sebastian}
+{98}{Perriman Smythe}
+{99}{Waromon}
+{100}{Joachim}
+{101}{Virgil}
+{102}{Priscilla Penn}
+{103}{Raven}
+{104}{Tollo Underhill}
+{105}{Z'an Al'urin}
+{106}{Geoffrey Tarrelond-Ashe}
+{107}{Weldo Rubin}
