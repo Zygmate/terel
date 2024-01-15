@@ -269,3 +269,48 @@ func createHalfling*: Halfling =
     fatigueCostMultiplierSpells: 1,
     description: "Halflings are the most diminutive people of Arcanum, and the smallest of all the Minute races. Baseline Halflings have boni of +2 to Dexterity, +2 points to the prowl skill, +1 point to the dodge skill, and gain +5% chance for critical hits. This comes at a cost of -3 to Strength."
   )
+
+
+func createHalfOgre*: HalfOgre =
+  HalfOgre(
+    id: -1,
+    strength: 4,
+    intelligence: -4,
+    constitution: 0,
+    willpower: 0,
+    dexterity: 0,
+    perception: 0,
+    beauty: -1,
+    charisma: 0,
+    hasGender: false,
+    technical: 0,
+    magickal: 0,
+    bow: 0,
+    dodge: 0,
+    melee: 0,
+    throwing: 0,
+    backstab: 0,
+    pickpocket: 0,
+    prowling: -2,
+    spottrap: 0,
+    gambling: 0,
+    haggle: 0,
+    heal: 0,
+    persuasion: 0,
+    techMod: 0,
+    repair: 0,
+    firearms: 0,
+    pickLock: 0,
+    disarmtrap: 0,
+    physDmgRes: 10,
+    fatigueDmgRes: 10,
+    magickRes: 0,
+    fireRes: 0,
+    poisonRes: 0,
+    electricalRes: 0,
+    critSuccessChance: 0,
+    negativeReactionMod: 0,
+    allowOneHandGun: false,
+    fatigueCostMultiplierSpells: 1,
+    description: "The half-ogre are a hybrid Race, the result of cross-breeding ogres and a humans. Baseline Half-Ogres start with a bonus of +4 to Strength, and a +10% resistance to physical and fatigue damage. This comes with penalties of -4 to Intelligence, -1 to Beauty, and a loss of -2 points to the prowling skill. They also are unable to use one-handed guns."
+  )
