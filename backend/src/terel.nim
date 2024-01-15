@@ -13,6 +13,9 @@ import
   terel/model/[
     #configuration,
   ],
+  terel/api/[
+    container,
+  ],
   terel/data/[
     race,
   ],
@@ -29,6 +32,25 @@ import
 const
   serverPort = 58111
   httpCodeOK = 200
+  responseRaces = $ %containRace([%createGnome(), %createDwarf(), %createElf(), %createHuman(), %createHalfling(), %createHalfOgre(), %createHalfOrc(), %createHalfElf()])
+  responseGnome = $ %containRace([%createGnome()])
+  responseDwarf = $ %containRace([%createDwarf()])
+  responseElf = $ %containRace([%createElf()])
+  responseHuman = $ %containRace([%createHuman()])
+  responseHalfling = $ %containRace([%createHalfling()])
+  responseHalfOgre = $ %containRace([%createHalfOgre()])
+  responseHalfOrc = $ %containRace([%createHalfOrc()])
+  responseHalfElf = $ %containRace([%createHalfElf()])
+
+# let
+#   gnome = %createGnome()
+#   dwarf = %createDwarf()
+#   elf = %createGnome()
+#   human = %createHuman()
+#   halfling = %createHalfling()
+#   halfOgre = %createHalfOgre()
+#   halfOrc = %createHalfOrc()
+#   halfElf = %createHalfElf()
 
 let logger = getLogger("terel")
 
@@ -47,39 +69,39 @@ when isMainModule:
 
   proc handlerRace(request: Request) =
     initHeaders
-    request.respond(httpCodeOK, headers, """{ "msg": "Hello, World!" }""")
+    request.respond(httpCodeOK, headers, responseRaces)
 
   proc handlerRaceGnome(request: Request) =
     initHeaders
-    request.respond(httpCodeOK, headers, $ %createGnome())
+    request.respond(httpCodeOK, headers, responseGnome)
 
   proc handlerRaceDwarf(request: Request) =
     initHeaders
-    request.respond(httpCodeOK, headers, $ %createDwarf())
+    request.respond(httpCodeOK, headers, responseDwarf)
 
   proc handlerRaceElf(request: Request) =
     initHeaders
-    request.respond(httpCodeOK, headers, $ %createElf())
+    request.respond(httpCodeOK, headers, responseElf)
 
   proc handlerRaceHuman(request: Request) =
     initHeaders
-    request.respond(httpCodeOK, headers, $ %createHuman())
+    request.respond(httpCodeOK, headers, responseHuman)
 
   proc handlerRaceHalfling(request: Request) =
     initHeaders
-    request.respond(httpCodeOK, headers, $ %createHalfling())
+    request.respond(httpCodeOK, headers, responseHalfling)
 
   proc handlerRaceHalfOgre(request: Request) =
     initHeaders
-    request.respond(httpCodeOK, headers, $ %createHalfOgre())
+    request.respond(httpCodeOK, headers, responseHalfOgre)
 
   proc handlerRaceHalfOrc(request: Request) =
     initHeaders
-    request.respond(httpCodeOK, headers, $ %createHalfOrc())
+    request.respond(httpCodeOK, headers, responseHalfOrc)
 
   proc handlerRaceHalfElf(request: Request) =
     initHeaders
-    request.respond(httpCodeOK, headers, $ %createHalfElf())
+    request.respond(httpCodeOK, headers, responseHalfElf)
 
   var router: Router
   router.get("/test", handlerTest)
