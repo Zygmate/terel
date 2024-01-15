@@ -314,3 +314,48 @@ func createHalfOgre*: HalfOgre =
     fatigueCostMultiplierSpells: 1,
     description: "The half-ogre are a hybrid Race, the result of cross-breeding ogres and a humans. Baseline Half-Ogres start with a bonus of +4 to Strength, and a +10% resistance to physical and fatigue damage. This comes with penalties of -4 to Intelligence, -1 to Beauty, and a loss of -2 points to the prowling skill. They also are unable to use one-handed guns."
   )
+
+
+func createHalfOrc*: HalfOrc =
+  HalfOrc(
+    id: -1,
+    strength: 1,
+    intelligence: 0,
+    constitution: 1,
+    willpower: 0,
+    dexterity: 0,
+    perception: 0,
+    beauty: -2,
+    charisma: -2,
+    hasGender: true,
+    technical: 0,
+    magickal: 0,
+    bow: 0,
+    dodge: 2,
+    melee: 2,
+    throwing: 0,
+    backstab: 0,
+    pickpocket: 0,
+    prowling: 0,
+    spottrap: 0,
+    gambling: 0,
+    haggle: 0,
+    heal: 0,
+    persuasion: 0,
+    techMod: 0,
+    repair: 0,
+    firearms: 0,
+    pickLock: 0,
+    disarmtrap: 0,
+    physDmgRes: 0,
+    fatigueDmgRes: 0,
+    magickRes: 0,
+    fireRes: 0,
+    poisonRes: 10,
+    electricalRes: 0,
+    critSuccessChance: 0,
+    negativeReactionMod: 0,
+    allowOneHandGun: true,
+    fatigueCostMultiplierSpells: 1,
+    description: "The half-orc are a hybrid Race, the result of interbreeding the orc and the pure-blooded human. Baseline Half-Orcs start with +2 points in both the Melee and Dodge skills, have a +1 bonus to both Strength and Constitution, and gain a +10% resistance to poison. This comes with a cost of -2 points to both Beauty and Charisma."
+  )
