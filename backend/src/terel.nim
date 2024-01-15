@@ -117,4 +117,4 @@ when isMainModule:
 
   let server = newServer(router)
   logger.log lvlNotice, "Serving on http://127.0.0.1:" & $serverPort
-  server.serve(serverPort.Port)
+  server.serve(serverPort.Port, address = "0.0.0.0")

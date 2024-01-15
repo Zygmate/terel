@@ -71,8 +71,7 @@ task dbuild, "Debug Build project.":
 task docker_build_prod, "Build Production Docker.":
   exec &"""nim c \
             --define:appVersion:"{buildVersion}" \
-            --define:appRevision:"{buildRevision}" \
-            --define:appDate:"{buildDate}" \
+            --define:appDate:"{gorge "date"}" \
             --define:configPath:/data \
             --define:logDirPath:/data/logs \
             --define:danger \
@@ -91,8 +90,7 @@ task docker_build_prod, "Build Production Docker.":
 task docker_build_debug, "Build Debug Docker.":
   exec &"""nim c \
             --define:appVersion:"{buildVersion}" \
-            --define:appRevision:"{buildRevision}" \
-            --define:appDate:"{buildDate}" \
+            --define:appDate:"{gorge "date"}" \
             --define:debug:true \
             --define:configPath:/data \
             --define:logDirPath:/data/logs \
