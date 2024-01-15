@@ -14,7 +14,7 @@ To make them work properly the will need to be added to ./Arcanum of Steamworks 
 ### gamelevelname.mes
 #### Template
 
-[base_template](/gamelevelname.mes)
+[base_template](docs/game-data/gamelevelname.mes)
 
 
 #### Syntax
@@ -38,7 +38,7 @@ A string with ? max characters. If the characters are too many the game will not
 
 #### Template
 
-[base_template](gamelevel.mes)
+[base_template](docs/game-data/gamelevel.mes)
 
 #### Syntax
 
