@@ -1,3 +1,5 @@
+from std/options import Option
+
 type
   Background* = object of RootObj
     id*: int
@@ -37,6 +39,23 @@ type
     poisonRes*: int
     electricalRes*: int
     critSuccessChance*: int
+    critFailureChance*: int
+    critHit*: int
+    critFailure*: int
+    speedMod*: int
+    positiveReactionMod*: int
+    reactionMod*: int
+    alignment*: int
+    maxAlignment*: int
+    goldMod*: int
+    item1*: Option[string]
+    item2*: Option[string]
+    item3*: Option[string]
+    extraMagickPoints*: int
+    isGenderLock*: bool
+    isTechLocked*: bool
+    explosiveExpertiseMod*: int
+    extra*: Option[string]
   ApprenticedToABlacksmith* = object of Background
   ApprenticedToAShopkeeper* = object of Background
   BeatWithAnUglyStick* = object of Background
