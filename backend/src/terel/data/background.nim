@@ -1,6 +1,8 @@
-from std/options import Option
+from std/options import Option, some, none
 
 type
+  GenderLock* = enum
+    Any, Male, Female
   Background* = object of RootObj
     id*: int
     name*: string
@@ -52,10 +54,11 @@ type
     item2*: Option[string]
     item3*: Option[string]
     extraMagickPoints*: int
-    isGenderLock*: bool
+    genderLock*: GenderLock
     isTechLocked*: bool
     explosiveExpertiseMod*: int
     extra*: Option[string]
+    description*: string
   ApprenticedToABlacksmith* = object of Background
   ApprenticedToAShopkeeper* = object of Background
   BeatWithAnUglyStick* = object of Background
@@ -119,3 +122,124 @@ type
   Tomboy* = object of Background
   ToughHide* = object of Background
   WildHalfOgre* = object of Background
+
+when false:
+  func createEmpty*: ApprenticedToABlacksmith =
+    ## Just for demonstration purposes during development.
+    ## Useless during runtime.
+    ApprenticedToABlacksmith(
+      id: -1,
+      name: "Apprenticed To A Blacksmith",
+      strength: 0,
+      intelligence: 0,
+      constitution: 0,
+      willpower: 0,
+      dexterity: 0,
+      perception: 0,
+      beauty: 0,
+      charisma: 0,
+      hasGender: false,
+      technical: 0,
+      magickal: 0,
+      bow: 0,
+      dodge: 0,
+      melee: 0,
+      throwing: 0,
+      backstab: 0,
+      pickpocket: 0,
+      prowling: 0,
+      spottrap: 0,
+      gambling: 0,
+      haggle: 0,
+      heal: 0,
+      persuasion: 0,
+      techMod: 0,
+      repair: 0,
+      firearms: 0,
+      pickLock: 0,
+      disarmtrap: 0,
+      physDmgRes: 0,
+      fatigueDmgRes: 0,
+      magickRes: 0,
+      fireRes: 0,
+      poisonRes: 0,
+      electricalRes: 0,
+      critSuccessChance: 0,
+      critFailureChance: 0,
+      critHit: 0,
+      critFailure: 0,
+      speedMod: 0,
+      positiveReactionMod: 0,
+      reactionMod: 0,
+      alignment: 0,
+      maxAlignment: 0,
+      goldMod: 0,
+      item1: "".some,
+      item2: string.none,
+      item3: string.none,
+      extraMagickPoints: 0,
+      genderLock: false,
+      isTechLocked: false,
+      explosiveExpertiseMod: 0,
+      extra: string.none,
+      description: ""
+    )
+
+func createApprenticedToABlacksmith*: ApprenticedToABlacksmith =
+  ApprenticedToABlacksmith(
+    id: -1,
+    name: "Apprenticed To A Blacksmith",
+    strength: 1,
+    intelligence: 0,
+    constitution: 0,
+    willpower: 0,
+    dexterity: -2,
+    perception: 0,
+    beauty: 0,
+    charisma: 0,
+    hasGender: false,
+    technical: 0,
+    magickal: 0,
+    bow: 0,
+    dodge: 0,
+    melee: 0,
+    throwing: 0,
+    backstab: 0,
+    pickpocket: 0,
+    prowling: 0,
+    spottrap: 0,
+    gambling: 0,
+    haggle: 0,
+    heal: 0,
+    persuasion: 0,
+    techMod: 0,
+    repair: 2,
+    firearms: 0,
+    pickLock: 0,
+    disarmtrap: 0,
+    physDmgRes: 0,
+    fatigueDmgRes: 0,
+    magickRes: 0,
+    fireRes: 0,
+    poisonRes: 0,
+    electricalRes: 0,
+    critSuccessChance: 0,
+    critFailureChance: 0,
+    critHit: 0,
+    critFailure: 0,
+    speedMod: 0,
+    positiveReactionMod: 0,
+    reactionMod: 0,
+    alignment: 0,
+    maxAlignment: 0,
+    goldMod: 0,
+    item1: string.none,
+    item2: string.none,
+    item3: string.none,
+    extraMagickPoints: 0,
+    genderLock: Any,
+    isTechLocked: false,
+    explosiveExpertiseMod: 0,
+    extra: string.none,
+    description: "Your master is a hard man. You gain a bonus to Strength (+1) and a bonus to your Repair skill, but you suffer a penalty to Dexterity (-2) due to the strenuous and repetitive hard labor."
+  )
