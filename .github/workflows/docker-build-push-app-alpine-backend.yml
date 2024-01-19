@@ -2,8 +2,6 @@ name: Docker Image Build and Push Backend
 
 on:
   push:
-    branches:
-      - master
     tags:
       - "*.*.*"
   pull_request:
