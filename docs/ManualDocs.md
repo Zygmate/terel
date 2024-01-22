@@ -11,289 +11,265 @@ There are 14 total races.
 >[!warning]
 All statistics are modifier to the [[#Base Statistic |base statistic table]].
 
-### Dwarves #minute #playable
+### Dwarves 
 
-__statModifiers
+#### Stat modifiers
 
 | ST  | IT  | CN  | WP  | DX  | PE  | BE  | CH  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1   | 0   | 1   | 0   | -1  | 0   | 0   | -1   |
 
-__gender__
+#### Gender Availability
 
 not available
 
-__aptitude__
+#### Aptitude Modifier
 
 +15% technical
 
-__skillsModifiers__
+#### Skills Modifiers
 
 2 points in each tecnichal skill
 
-__extras__
+#### Extras
 
 fatigued cost doubled when casting spells
 
-__desc__
+#### Description
 
 >[!quote]
 >One of many humanoid races in the world of Arcanum. Baseline Dwarves have a 15% bonus to technical aptitude, gain 2 points in each technical skill, start with a +1 bonus to both Strength and Constitution, and have a -1 penalty in both Dexterity and Charisma. And for any Dwarven character wishing to cast spells, they will find that the fatigue cost for casting said spells are doubled.
 
-
-
-### Gnomes #minute #playable
-
-__statModifiers__
+### Gnomes 
+#### Stat modifiers
 
 | ST  | IT  | CN  | WP  | DX  | PE  | BE  | CH  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0   | 0   | -2   | 2   | 0   | 0   | 0   | 0  |
 
-__gender__
+#### Gender Availability
 
 not available
 
-__aptitude__
+#### Aptitude Modifier
 
-__skillsModifiers__
+#### Skills Modifiers
 
-__extras__
+#### Extras
 
 +10 to any negative reaction
 
-__desc__
+#### Description
 
 >[!quote]
 >Gnomes, like dwarves and halflings, are a Minute Race. Baseline Gnomes start with a +2 bonus to Willpower, but have a -2 penalty to Constitution. They also gain +2 points to the Haggle skill, and gain +10 to any negative reaction.
 
+### Halflings
 
-### Halflings #minute #playable
-__statModifiers__
+#### Stat modifiers
 
 | ST  | IT  | CN  | WP  | DX  | PE  | BE  | CH  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | -3  | 0   | 0   | 0   | 2   | 0   | 0   | 0   |
 
-__gender__
+#### Gender Availability
 
 not available
 
-__aptitude__
+#### Aptitude Modifier
 
 none
 
-__skillsModifiers__
+#### Skills Modifiers
 
 +2 prowl
 +1 dodge
 
-__extras__
+#### Extras
 
 +5% critical hit chance
 
-__desc__
+#### Description
 
 >[!quote]
 >Halflings are the most diminutive people of Arcanum, and the smallest of all the Minute races. Baseline Halflings have bonuses of +2 to Dexterity, +2 points to the prowl skill, +1 point to the dodge skill, and gain +5% chance for critical hits. This comes at a cost of -3 to Strength.
 
 
-### Half-ogres #gigantic #playable 
+### Half-ogres
+
 __statModifiers
 
 | ST  | IT  | CN  | WP  | DX  | PE  | BE  | CH  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 4   | -4  | 0   | 0   | 0   | 0   | -1   | 0   |
 
-__gender__
+#### Gender Availability
 
 not available
 
-__aptitude__
+#### Aptitude Modifier
 
 none
 
-__skillsModifiers__
+#### Skills Modifiers
 
 -2 prowling
 
-__extras__
+#### Extras
 
 +10% resistance to physical damage
 +10% resistance to fatigue damage
 no one-handed guns
 
-__desc__
+#### Description
 
 >[!quote]
 >The half-ogre are a hybrid Race, the result of cross-breeding ogres and a humans. Baseline Half-Ogres start with a bonus of +4 to Strength, and a +10% resistance to physical and fatigue damage. This comes with penalties of -4 to Intelligence, -1 to Beauty, and a loss of -2 points to the prowling skill. They also are unable to use one-handed guns.
 
+### Humans 
 
-
-### Humans #median #playable #pure
-__statModifiers__
+#### Stat modifiers
 
 | ST  | IT  | CN  | WP  | DX  | PE  | BE  | CH  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0  |
 
-__gender__
+#### Gender Availability
 
 available
 
-__aptitude__
+#### Aptitude Modifier
 
 none
 
-__skillsModifiers__
+#### Skills Modifiers
 
 none
 
-__extras__
+#### Extras
 
 none
 
-__desc__
+#### Description
 
 >[!quote]
 >The human Race are the root stock of all the Median races, and one of the oldest peoples of Arcanum. Human Males have the Baseline STats from which all other variations arise.
 
+### Elves
 
-
-
-
-
-### Elves #median #playable #pure
-
-__statModifiers__
+#### Stat modifiers
 
 | ST  | IT  | CN  | WP  | DX  | PE  | BE  | CH  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | -1   | 0   | -2   | 1   | 1   | 0   | 1   | 0   |
 
-__gender__
+#### Gender Availability
 
 available
 
-__aptitude__
+#### Aptitude Modifier
 
 +15% magickal
 
-__skillsModifiers__
+#### Skills Modifiers
 
 -2 to each technical skill
 
-__extras__
+#### Extras
 
 
-__desc__
+#### Description
 
 >[!quote]
 >The baseline Elven Race start with a 15% bonus to magickal aptitude, have a -2 point penalty to each technical skill, gain a +1 bonus to each Dexterity, Willpower, and Beauty, but lose -2 points of Constitution and -1 point of Strength.
 
+### Half-elves
 
-
-
-
-### Half-elves #median #playable #pure #human-hybrids 
-__statModifiers__
+#### Stat modifiers
 
 | ST  | IT  | CN  | WP  | DX  | PE  | BE  | CH  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0   | 0   | -1  | 0   | 1   | 0   | 1   | 0   |
 
-__gender__
+#### Gender Availability
 
 available
 
-__aptitude__
+#### Aptitude Modifier
 
 +5% magickal
 
-__skillsModifiers__
+#### Skills Modifiers
 
 -1 to each technical skill
 
-__extras__
+#### Extras
 
 
-__desc__
+#### Description
 
 >[!quote]
 >Half-elves are a hybrid Race, the product of human and elven parents. Half-Elves start with a 5% bonus to magickal aptitude, have a -1 penalty to each technical skill, gain a +1 bonus in both Dexterity and Beauty, but lose -1 point of Constitution.
+### Half-orcs
 
-
-
-
-
-
-
-### Half-orcs #median #playable #human-hybrids
-__statModifiers__
+#### Stat modifiers
 
 | ST  | IT  | CN  | WP  | DX  | PE  | BE  | CH  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1   | 0   | 1   | 0   | 0   | 0   | -2  | -2   |
 
-__gender__
+#### Gender Availability
 
 available
 
-__aptitude__
+#### Aptitude Modifier
 
 none
 
-__skillsModifiers__
+#### Skills Modifiers
 
 +2 to melee
 +2 to dodge
 
-__extras__
+#### Extras
 
 +10% resistance to poison
 
-__desc__
+#### Description
 
 >[!quote]
 >The half-orc are a hybrid Race, the result of interbreeding the orc and the pure-blooded human. Baseline Half-Orcs start with +2 points in both the Melee and Dodge skills, have a +1 bonus to both Strength and Constitution, and gain a +10% resistance to poison. This comes with a cost of -2 points to both Beauty and Charisma.
 
-
-
-
-
-### Giants #gigantic #non-playable
+### Giants
 
 >[!danger]
 >This race is not playable.
 
-### Ogres #gigantic #non-playable 
+### Ogres
 
 >[!danger]
 >This race is not playable.
 
-### Orcs #median #non-playable #pure
-
+### Orcs
 >[!danger]
 >This race is not playable.
 
-### Dark Elves #out-of-classification #non-playable 
+### Dark Elves
 
 >[!danger]
 >This race is not playable.
 
 
-### Bedokaan #out-of-classification  #non-playable 
+### Bedokaan
 
 >[!danger]
 >This race is not playable.
 >
 
-### Kite #out-of-classification  #non-playable 
+### Kite
 
 >[!danger]
 >This race is not playable.
-
-
 
 ## Gender
 
@@ -1152,8 +1128,7 @@ While outdoor in open area:
 ### Magick Allergy
 
 >[!warning]
->Available to dwarves, gnomes, halflings, half-ogres, humans, half-orcs.
-
+>Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "elves" && race != "half-elves"}).join(", "))`.
 
 >[!quote]
 >You are severely allergic to magickal items, such that touching them causes you pain. Therefore, you have been devoted to technology since a young age and have developed a knack for it. You gain a +10% bonus to Technological Aptitude, but you cannot wield ANY magickal items.
@@ -1171,7 +1146,7 @@ While outdoor in open area:
 ### Nature Mage
 
 >[!warning]
->Available to gnomes, halflings, half-ogres, humans, elves, half-elves, half-orcs.
+>Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "dwarves"}).join(", "))`.
 
 >[!quote]
 >You were born with a magickal aptitude that has affinity for nature. While standing on a natural surface, you possess a 20% bonus to Magickal Aptitude. But on a man-made surface, you suffer a 20% penalty to your Magickal Aptitude.
@@ -1186,7 +1161,7 @@ While outdoor in open area:
 ### Night Mage
 
 >[!warning]
->Available to gnomes, halflings, half-ogres, humans, elves, half-elves, half-orcs.
+>Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "dwarves"}).join(", "))`.
 
 >[!quote]
 >You were born with a magickal aptitude that has affinity for the night. At night (between the hours of 6 PM and 6 AM), you possess a 20% bonus to your Magickal Aptitude, but during the day you suffer a 20% penalty to your Magickal Aptitude.
@@ -1265,7 +1240,7 @@ While outdoor in open area:
 ### Sheltered Childhood
 
 >[!warning]
->Available to gnomes, halflings, humans, elves, half-elves, half-orcs.
+>Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "half-ogres" && race != "dwarves"}).join(", "))`.
 
 >[!quote]
 >You were cooed and coddled incessantly as a child. As a result of overprotective parenting, you take a severe penalty to Strength (-6), but, being more sensitive, you have bonuses to Intelligence (+2), Willpower (+2), and Perception (+1).
@@ -1279,7 +1254,7 @@ While outdoor in open area:
 ### Sky Mage
 
 >[!warning]
->Available to gnomes, halflings, half-ogres, humans, elves, half-elves, half-orcs.
+>Available to `$= dv.span(dv.current().playableRaces.filter(function f (race) { return race != "dwarves"}).join(", "))`.
 
 >[!quote]
 >You were born with a magickal aptitude that has affinity for the open sky. While outside and in clear view of the sky, you possess a 20% bonus to Magickla Aptitude. But while underground, indoors, or even under a heavy forest canopy, you suffer a 20% penalty to your Magickal Aptitude.
@@ -1385,7 +1360,7 @@ While outdoor in open area:
 
 
 
----------------------------------------------------------------------------
+---
 ## Statistics
 
 #### Base Stats
@@ -1393,8 +1368,6 @@ While outdoor in open area:
 | ST  | IN  | CN  | WP  | DX  | PE  | BE  | CH |
 | --- | --- | --- | --- | --- | --- | --- | -------- |
 | 8   | 8   | 8   | 8   | 8   | 8   | 8   | 8        |
-
-
 #### Maxed out Stats
 
 When each of the stats gets to 20 (or higher) each of the stats gives particular bonuses:
@@ -1405,7 +1378,7 @@ When each of the stats gets to 20 (or higher) each of the stats gives particular
 - Constitution
 	- You are immune to poison
 - Beauty
-	- Reaction modifier is +100% (+10% over 20)
+	- Reaction modifier is 100 (+10 for each point over 20)
 - Intelligence
 	- +10% to the success rate of every Skill
 - Perception
@@ -1431,6 +1404,73 @@ Each skills is part of one of two gropus...
 
 ![[Pasted image 20230719183435.png]]
 
+#### Derived Stats
+
+##### Hit Points
+Each point of strength gives 2 points.
+Each point of willpower gives 1 point.
+Each Character Point allocated gives 4 points.
+##### Fatigue
+Each point of constitution gives 2 points.
+Each point of willpower gives 1 point.
+Each Character Point allocated gives 4 points.
+##### Carry Weight
+Each point of strength gives 500 bonus points.
+Each tier of encumbrance has a speed modifier.
+##### Damage Bonus
+If strength is 10 or above you get +1 to all unarmed or melee damage.
+If strength is 9 or below you get -1 to all unarmed or melee damage.
+
+>[!note]
+>Damage Bonus is still limited by a weapon's damage cap.
+
+##### Armor Class Adjustments
+Each point of dexterity gives 1 point.
+It is added to the armor class and there is no limit.
+##### Speed
+Each point of dexterity gives 1 point.
+Affects movement speed, number of action points in turn based combat, attack speed of most (or all) weapons.
+##### Heal Rate
+At 0 constitution you have 0 Heal Rate.
+Every 3 points in constitution give you 1 point in Heal Rate, starting from 1 up to 19.
+At 20 constitution you have 6 Heal Rate.
+##### Poison Recovery
+Each point of constitution gives 1 point.
+##### Reaction Modifier
+Refer to the table below for all the values (tested on Human):
+
+| BE  | Reaction Modifier |
+| --- | ----------------- |
+| 1   | -65               |
+| 2   | -52               |
+| 3   | -42               |
+| 4   | -33               |
+| 5   | -25               |
+| 6   | -18               |
+| 7   | -12               |
+| 8   | -7                |
+| 9   | -3                |
+| 10  | 0                 |
+| 11  | 3                 |
+| 12  | 7                 |
+| 13  | 12                 |
+| 14  | 18                 |
+| 15  | 25                 |
+| 16  | 33                 |
+| 17  | 42                 |
+| 18  | 52                 |
+| 19  | 65                 |
+| 20  | 100                 |
+##### Max Followers
+Each point of charisma gives 0.25 extra followers.
+
+>[!note]
+>Only integers will be taken for the actual follower value i.e. 5 charisma gives a total of 1.25 max followers which is converted to 1 max follower.
+
+##### Resistances
+Resistances are NOT derived stats with the exception of Poison Resistance.
+If constitution is 4 or lower, Poison Resistance is always 0.
+Each point of constitution gives +5 points in Poison Resistance, starting from constitution 5.
 ## Skills
 
 ### Aptitude
@@ -1439,9 +1479,6 @@ Each skills is part of one of two gropus...
 > The following is my personal view on how the aptitude system works
 
 Goes from -100 (implies being at max Magickal Aptitude) to 100 (implies being at max Tchnological Aptitude)
-
-
-
 
 >[!info]
 > The following 4 skill groups are capped at 20 point max each. Every skill point spent gives 4 progress towards the cap. (Instead of 1)
@@ -1489,6 +1526,18 @@ Goes from -100 (implies being at max Magickal Aptitude) to 100 (implies being at
 
 
 ## Technology Degrees
+### Requirements
+Each schematic tier has an intelligence requirements:
+
+| Tier | IN rquirements |
+| ---- | -------------- |
+| 1    | 5              |
+| 2    | 8              |
+| 3    | 11             |
+| 4    | 13             |
+| 5    | 15             |
+| 6    | 17             |
+| 7     | 19               |
 ### Herbology
 #### Healing Salve
 - Minimum requirements: IN 5
@@ -1606,8 +1655,6 @@ Goes from -100 (implies being at max Magickal Aptitude) to 100 (implies being at
 #### Dynamite
 - Minimum requirements: IN 19
 - Components: Nitroglycerin and Saltpeter
-- 
-- 
 - Result: Used and placed, not thrown, dealing AoE Physical Damage, 1 unit is made
 ### Gun Smithy
 #### Hand Crafted Flintlock
@@ -2132,3 +2179,127 @@ Effect: this powerful spell speeds the caster and his entire group, granting a
 same time in the world. Any secondary casting, by any caster, automatically
 dispels the first spell. Also note that to dispel the spell directly, Disperse
 Magic must be cast on the caster himself.
+
+## Auto Leveling Scheme
+
+[Link to Forum documentation](https://terra-arcanum.com/forums/threads/tutorial-custom-level-schemes.18507/)
+
+The auto leveling scheme uses 2 files to work properly [[#gamelevelname.mes]] and [[#gamelevel.mes]]
+
+### gamelevelname.mes
+#### Template
+
+[base_template](Assets/gamelevelname.mes)
+
+#### Syntax
+
+_{scheme_id}{scheme_name}_
+
+#### Parameters
+
+> scheme_id
+
+A positive integer greater or equal to 107.
+
+>[!warning]
+>Integer numbers from 0 to 49 are "reserved" for the base game schemes. Changing them may result in data loss, data corruption or an overall unplayable state of the game.
+
+>scheme_name
+
+A string with ? max characters. If the characters are too many the game will not show the scheme name, hence it will not me usable.
+
+### gamelevel.mes
+
+#### Template
+
+[base_template](Assets/gamelevel.mes)
+
+#### Syntax
+
+_{scheme_id}-scheme_name		{point_1_allocation, point_2_allocation}_
+
+#### Parameters
+
+> scheme_id
+
+A positive integer between 50 and 199. It links the schemes (this one with the same _scheme_id_ in [[#gamelevelname.mes]])
+
+>-_scheme_name
+
+Any string (no limit known) preceded with "-".
+
+>[!note]
+>It is a good practice to have the same name as the one stated in [[#gamelevelname.mes]], though it is not necessary. 
+
+> point_n_allocation
+
+Each point allocation is divided by a comma. refers to where the point is actually allocated.
+
+The _point_n_allocation_ structure is as follows:
+
+> _valid_name target_
+
+_target_ is a number that depends on the value of the valid name and it's 
+
+_valid_names_ is a spell, tech skill, tech degree, attribute, health or mana alias (refer to the table below) that is valid.
+
+A comprehensive table of each possible names, permitted aliases and values:
+
+| name         | max values |
+| ------------ | ---------- |
+| st           | 20         |
+| dx           | 20         |
+| cn           | 20         |
+| be           | 20         |
+| in           | 20         |
+| pe           | 20         |
+| wp           | 20         |
+| ch           | 20         |
+| bow          | 20         |
+| dodge        | 20         |
+| melee        | 20         |
+| throwing     | 20         |
+| backstab     | 20         |
+| pickpocket   | 20         |
+| prowling     | 20         |
+| spottrap     | 20         |
+| gambling     | 20         |
+| haggle       | 20         |
+| heal         | 20         |
+| persuasion   | 20         |
+| repair       | 20         |
+| firearms     | 20         |
+| picklock     | 20         |
+| armtrap      | 20         |
+| conveyance   | 5          |
+| divination   | 5          |
+| air          | 5          |
+| earth        | 5          |
+| fire         | 5          |
+| water        | 5          |
+| force        | 5          |
+| mental       | 5          |
+| meta         | 5          |
+| morph        | 5          |
+| nature       | 5          |
+| necro_evil   | 5          |
+| necro_good   | 5          |
+| phantasm     | 5          |
+| summoning    | 5          |
+| temporal     | 5          |
+| anatomical   | 7           |
+| chemistry    | 7          |
+| electric     | 7          |
+| explosives   | 7          |
+| gun_smithy   | 7          |
+| mechanical   | 7          |
+| smithy       | 7          |
+| therapeutics | 7          |
+| maxhps       | ?          |
+| maxfatigue   | ?          |
+
+>[!note]
+>_anatomical_ refers to herbology.
+>
+>The allocation point represents the "goal" to achieve i.e. "st 20" translates to "add points until strength is at 20".
+>Also note that saying "melee 20" will add 18 points in Dexterity too, since it is a requirement to achieve it.
