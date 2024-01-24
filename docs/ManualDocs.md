@@ -9,7 +9,7 @@
 There are 14 total races.
 
 >[!warning]
-All statistics are modifier to the [[#Base Statistic |base statistic table]].
+All statistics are modifier to the base statistic table.
 
 ### Dwarves 
 
@@ -1388,8 +1388,6 @@ When each of the stats gets to 20 (or higher) each of the stats gives particular
 - Charisma
 	- Your followers are 100% loyal (followers will never flee form your side and will ONLY leave you if you ask them to)
 
-![[Pasted image 20230719182959.png]]
-
 #### Stats categories
 
 Each skills is part of one of two gropus...
@@ -1401,8 +1399,6 @@ Each skills is part of one of two gropus...
 - Prowess
 - Resistance
 - Appearance
-
-![[Pasted image 20230719183435.png]]
 
 #### Derived Stats
 
@@ -2184,12 +2180,12 @@ Magic must be cast on the caster himself.
 
 [Link to Forum documentation](https://terra-arcanum.com/forums/threads/tutorial-custom-level-schemes.18507/)
 
-The auto leveling scheme uses 2 files to work properly [[#gamelevelname.mes]] and [[#gamelevel.mes]]
+The auto leveling scheme uses 2 files to work properly gamelevelname.mes and gamelevel.mes
 
 ### gamelevelname.mes
 #### Template
 
-[base_template](Assets/gamelevelname.mes)
+The base template is in docs/game-data/gamelevelname.mes.
 
 #### Syntax
 
@@ -2212,7 +2208,7 @@ A string with ? max characters. If the characters are too many the game will not
 
 #### Template
 
-[base_template](Assets/gamelevel.mes)
+The base template is in docs/game-data/gamelevel.mes.
 
 #### Syntax
 
@@ -2222,14 +2218,14 @@ _{scheme_id}-scheme_name		{point_1_allocation, point_2_allocation}_
 
 > scheme_id
 
-A positive integer between 50 and 199. It links the schemes (this one with the same _scheme_id_ in [[#gamelevelname.mes]])
+A positive integer between 50 and 199. It links the schemes (this one with the same _scheme_id_ in gamelevelname.mes)
 
 >-_scheme_name
 
 Any string (no limit known) preceded with "-".
 
 >[!note]
->It is a good practice to have the same name as the one stated in [[#gamelevelname.mes]], though it is not necessary. 
+>It is a good practice to have the same name as the one stated in gamelevelname.mes, though it is not necessary. 
 
 > point_n_allocation
 
