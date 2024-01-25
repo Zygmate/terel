@@ -1467,59 +1467,222 @@ Each point of charisma gives 0.25 extra followers.
 Resistances are NOT derived stats with the exception of Poison Resistance.
 If constitution is 4 or lower, Poison Resistance is always 0.
 Each point of constitution gives +5 points in Poison Resistance, starting from constitution 5.
+
 ## Skills
 
-### Aptitude
+The following 4 skill groups are capped at 20 point max each.
 
->[!warning]
-> The following is my personal view on how the aptitude system works
+Every skill point spent gives 4 progress towards the cap. (Instead of 1).
 
-Goes from -100 (implies being at max Magickal Aptitude) to 100 (implies being at max Tchnological Aptitude)
+Each skill is also tied to an attribute, to progress further the player must first achieve the minimum attribute value before he is able to spend a Character Point on said skill.
 
->[!info]
-> The following 4 skill groups are capped at 20 point max each. Every skill point spent gives 4 progress towards the cap. (Instead of 1)
-
-
+Each skill has 3 training ranks (apprentice, expert and master) granting different bonuses based on the skills itself.
 ### Combat
+#### Bow
 
-| Name     | Attribute |
-| -------- | --------- |
-| Bow      | DX        |
-| Dodge    | DX        |
-| Melee    | DX        |
-| Throwing | DX        |
+_"The knack of using a classic bow weapon, be the bow short or long."_
 
+It is tied to the Dexterity attribute.
+
+The following table represents the perks each training rank gives:
+
+|                        Apprentice                        |                   Expert                   |                               Master                                |
+|:--------------------------------------------------------:|:------------------------------------------:|:-------------------------------------------------------------------:|
+| The Speed of the Character with a bow is increased by 5. | The Character may fire two arrows at once. | The Character’s chance of success is unaffected by range penalties. |
+#### Dodge
+
+_""The tendency to leap aside and avoid injury when one is attacked, or surprised by a trap._
+
+It is tied to the Dexterity attribute.
+
+The following table represents the perks each training rank gives:
+
+|                                   Apprentice                                    |                                     Expert                                      |                                                   Master                                                   |
+|:-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|
+| On a critical success, there is a 10% chance the opponent will critically fail. | On a critical success, there is a 50% chance the opponent will critically fail. | On a critical success, the opponent will always critically fail (overrides the benefits of Melee Mastery). |
+#### Melee
+
+_"The ability to land a damaging blow, when boxing or striking with a weapon in hand"_
+
+It is tied to the Dexterity attribute.
+
+The following table represents the perks each training rank gives:
+
+|                            Apprentice                             | Expert                                             |                          Master                           |
+|:-----------------------------------------------------------------:| -------------------------------------------------- |:---------------------------------------------------------:|
+| The Speed of the Character with a melee weapon is increased by 5. | The Character is unaffected by lighting penalties. | The Character cannot critically fail with a melee weapon. |
+#### Throwing
+
+_"The capacity to hurl knives, rocks, grenades or any other potentially dangerous object with accuracy"_
+
+It is tied to the Dexterity attribute.
+
+The following table represents the perks each training rank gives:
+
+|                      Apprentice                      |                       Expert                       |                               Master                               |
+|:----------------------------------------------------:|:--------------------------------------------------:|:------------------------------------------------------------------:|
+| The Speed of the Character’s throw is increased by 5 | The Throwing Range of the Character is 50% farther | The Character’s chance of success is unaffected by range penalties |
 ### Thieving
 
-| Name        | Attribute |
-| ----------- | --------- |
-| Backstab    | DX        |
-| Pick Pocket | DX        |
-| Prowling    | PE        |
-| Spot Trap   | PE        |
+#### Backstab
 
+_"This Skill allows one’s Character to score extra damage when using a rear attack with a dagger. An unaware opponent receives considerably more damage than an aware one. The amount of damage increases with Skill’s improvement, as well."_
 
+It is tied to the Dexterity attribute.
+
+The following table represents the perks each training rank gives:
+
+|                                Apprentice                                |                               Expert                                |                                        Master                                         |
+|:------------------------------------------------------------------------:|:-------------------------------------------------------------------:|:-------------------------------------------------------------------------------------:|
+| A successful rear attack upon an unaware opponent will bypass his armor. | The Character may backstab with swords and axes as well as daggers. | The Character gains an enormous increase to his chance of scoring a critical success. |
+#### Pick Pocket
+
+_"Picking pockets is the fine art of stealing from others, and this Skill allows the Character to add and remove items from the inventory of anoth- er person. A failure in the use of this Skill may garner unwelcome attention from his or her intended victim, if said victim makes a successful Perception check. On a critical failure the Character is always caught, however--even by the blindest numbskull imaginable."_
+
+It is tied to the Dexterity attribute.
+
+The following table represents the perks each training rank gives:
+
+|                     Apprentice                      |              Expert              |                        Master                         |
+|:---------------------------------------------------:|:--------------------------------:|:-----------------------------------------------------:|
+| The Character is ONLY caught on a critical failure. | The item size penalty is halved. | The Character cannot be caught when planting an item. |
+#### Prowling
+
+_"It takes both delicacy and grace to move so quietly that one is able to avoid detection. Naturally the Character’s measure of success is determined to some degree by the surroundings and the available light; it is more difficult to hide one- self in a brightly-lit, empty room than in a dark, crate-filled warehouse. Armor will affect a would-be prowler’s chance of success; it is rather easier to sneak about in normal clothes than in a clanking suit of plate mail."_
+
+It is tied to the Perception attribute.
+
+The following table represents the perks each training rank gives:
+
+|                                          Apprentice                                          |                                                 Expert                                                  |                                                              Master                                                              |
+|:--------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|
+| The Character’s chance of success is unaffected by lighting, and armor penalties are halved. | The Character’s chance of success is unaffected by surrounding objects, and he can walk while Prowling. | The Character can conceal himself during combat and cause his opponent to lose track of him, and he may also run while Prowling. |
+#### Spot Trap
+
+_"Even the most skillfully laid trap cannot be completely hidden from a person with properly trained eyes. The ability to locate mechanical traps in one’s immediate vicinity before they are tripped is called "Spot Trap", and the chance of success may be reduced by improper light"_
+
+It is tied to the Perception attribute.
+
+The following table represents the perks each training rank gives:
+
+|                          Apprentice                          |                                  Expert                                  |                                              Master                                              |
+|:------------------------------------------------------------:|:------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------:|
+| The Character’s chance of success is unaffected by lighting. | The Character is able to sense magical traps as well as mechanical ones. | If the Character fails (but does not critically fail), he gets a second chance to spot the trap. |
 ### Social
 
-| Name       | Attribute |
-| ---------- | --------- |
-| Gambling   | IN        |
-| Haggle     | WP        |
-| Heal       | IN        |
-| Persuasion | CH        |
+#### Gambling
 
+_"A wise man makes his own luck, and with a bit of Skill one can win consistently at cards, dice and other games of chance. This Skill may come in handy when a Character wishes to gamble for certain items held by a Non-Playing Character. The rank of the Gambling Skill determines the maximum worth of any single item for which one may gamble."_
+
+It is tied to the Intelligence attribute.
+
+The following table represents the perks each training rank gives:
+
+|                   Apprentice                   |                  Expert                  |                                  Master                                  |
+|:----------------------------------------------:|:----------------------------------------:|:------------------------------------------------------------------------:|
+| A "mark" will gamble for more expensive items. | A "mark" will gamble away wielded items. | A "mark" will gamble away things that he or she would not normally sell. |
+#### Haggle
+
+_"The gentle art of the deal comes into play when one wishes to buy goods at less than their full price. The higher the rank of one’s Haggle Skill, the less a Character will pay for items during bartering and the more he or she will receive when selling items. A person of quick wit and sharp tongue need never pay standard retail prices!"_
+
+It is tied to the Wilpower attribute.
+
+The following table represents the perks each training rank gives:
+
+|                      Apprentice                      |                              Expert                               |                      Master                      |
+|:----------------------------------------------------:|:-----------------------------------------------------------------:|:------------------------------------------------:|
+| The merchant’s mark-up is reported to the character. | Merchants will buy anything, even things they normally would not. | Merchants will sell items marked "Not for Sale". |
+#### Heal
+
+_"The Skill of Healing gives a Character the ability to cure wounds and reduce crippling injury. One must make use of bandages or medical kits in order to Heal someone, and each use of the Skill will deplete some of your supplies. A critical success can do a great deal of good to an injured person, but a critical failure will Heal nothing and use up more than the usual measure of one’s Healing supplies."_
+
+It is tied to the Inetlligence attribute.
+
+The following table represents the perks each training rank gives:
+
+|             Apprentice             |                                   Expert                                    |                                          Master                                          |
+|:----------------------------------:|:---------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------:|
+| A Character may heal an extra 50%. | Critical failures are merely failures (and thus do not use extra bandages). | All successes are critical successes (and will Heal side effects of a crippling injury). |
+#### Persuasion
+
+_"It requires a certain degree of charm to Persuade others to take action, or to convince them that we are speaking the truth. Within the confines of our Game, this particular Skill operates passively in dialog situations"_
+
+It is tied to the Charisma attribute.
+
+The following table represents the perks each training rank gives:
+
+|                         Apprentice                          |                             Expert                              |                                     Master                                      |
+|:-----------------------------------------------------------:|:---------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
+| Followers will wait for one’s Character longer than normal. | Gain a bonus of 1 extra follower in addition to Charisma Bonus. | Anyone will join with the Character, regardless of reaction to one’s alignment. |
 ### Technological
 
 >[!info]
 >Each point spent in this category raises the technological aptitude as well.
+#### Repair
 
-| Name        | Attribute |
-| ----------- | --------- |
-| Repair      | IN        |
-| Firearms    | PE        |
-| Pick Lock   | DX        |
-| Disarm Trap | PE        |
+_"This is the Skill that makes a person handy; possession of Repair Skill gives one the chance to repair a plethora of Technological and smithied items, from swords to steam engines to Tesla guns."_
 
+It is tied to the Intelligence attribute.
+
+The following table represents the perks each training rank gives:
+
+|            Apprentice             |              Expert               |                                                                                    Master                                                                                    |
+|:---------------------------------:|:---------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Reduction of max HP’s is only 5%. | Reduction of max HP’s is only 1%. | There is no reduction of max HP’s except on a critical failure. A Repair Master can fix broken items (items reduced to 0 hit points) but always at a cost of 5% of max HP’s. |
+#### Firearms
+
+_"This Skill governs the use of all Technological projectile weapons."_
+
+It is tied to the Perception attribute.
+
+The following table represents the perks each training rank gives:
+
+|                        Apprentice                        |                   Expert                    |                               Master                                |
+|:--------------------------------------------------------:|:-------------------------------------------:|:-------------------------------------------------------------------:|
+| The Speed of the Character with a gun is increased by 5. | Called shots are made with 2/3 the penalty. | The Character’s chance of success is unaffected by range penalties. |
+#### Pick Locks
+
+_"This Skill allows one to open locks without the use of the appropri- ate key. A critical failure in the use of this Skill will jam the lock, rendering it impossible to open without the proper key or a Spell of some kind. Note that the Character must have lockpicks in his or her possession, in order to use this skill."_
+
+It is tied to the Dexterity attribute.
+
+The following table represents the perks each training rank gives:
+
+|                Apprentice                 |                     Expert                      |                        Master                         |
+|:-----------------------------------------:|:-----------------------------------------------:|:-----------------------------------------------------:|
+| Pick lock action takes half as much time. | The Character is unaffected by light penalties. | The penalty based on the lock’s difficulty is halved. |
+#### Disarm Traps
+
+_"An aptitude in the area allows the Character to disable traps. One must be aware of the trap’s existence (via the Spot Trap Skill, or the like) before one can attempt to disarm it"_
+
+It is tied to the Perception attribute.
+
+The following table represents the perks each training rank gives:
+
+|                   Apprentice                    |                                                          Expert                                                           |                                                Master                                                 |
+|:-----------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------:|
+| The Character is unaffected by light penalties. | If the Character critically succeeds at disarming, he gets an item that is part of the trap (such as arrows or dynamite). | If the Character fails (but does not critically fail) at dis- arming a trap, he gets a second chance. |
+
+### Full table reference
+
+| Name        | Attribute | Apprentice                                                                      | Expert                                                                          | Master                                                                                                     |
+| ----------- | --------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Bow         | DX        | The Speed of the Character with a bow is increased by 5.                        | The Character may fire two arrows at once.                                      | The Character’s chance of success is unaffected by range penalties.                                        |
+| Dodge       | DX        | On a critical success, there is a 10% chance the opponent will critically fail. | On a critical success, there is a 50% chance the opponent will critically fail. | On a critical success, the opponent will always critically fail (overrides the benefits of Melee Mastery). |
+| Melee       | DX        | The Speed of the Character with a melee weapon is increased by 5.                | The Character is unaffected by lighting penalties.                                                                                | The Character cannot critically fail with a melee weapon.                                                                                                           |
+| Throwing    | DX        | The Speed of the Character’s throw is increased by 5                                                                                | The Throwing Range of the Character is 50% farther                                                                                | The Character’s chance of success is unaffected by range penalties                                                                                                           |
+| Backstab    | DX        | A successful rear attack upon an unaware opponent will bypass his armor.                                                                                | The Character may backstab with swords and axes as well as daggers.                                                                                | The Character gains an enormous increase to his chance of scoring a critical success.                                                                                                           |
+| Pick Pocket | DX        | The Character is ONLY caught on a critical failure.                                                                                | The item size penalty is halved.                                                                                | The Character cannot be caught when planting an item.                                                                                                           |
+| Prowling    | PE        | The Character’s chance of success is unaffected by lighting, and armor penalties are halved.                                                                                | The Character’s chance of success is unaffected by surrounding objects, and he can walk while Prowling.                                                                                | The Character can conceal himself during combat and cause his opponent to lose track of him, and he may also run while Prowling.                                                                                                           |
+| Spot Trap   | PE        | The Character’s chance of success is unaffected by lighting.                                                                                | The Character is able to sense magical traps as well as mechanical ones.                                                                                | If the Character fails (but does not critically fail), he gets a second chance to spot the trap.                                                                                                           |
+| Gambling    | IN        | A "mark" will gamble for more expensive items.                                                                                | A "mark" will gamble away wielded items.                                                                                | A "mark" will gamble away things that he or she would not normally sell.                                                                                                           |
+| Haggle      | WP        | The merchant’s mark-up is reported to the character.                                                                                | Merchants will buy anything, even things they normally would not.                                                                                | Merchants will sell items marked "Not for Sale".                                                                                                           |
+| Heal        | IN        | A Character may heal an extra 50%.                                                                                | Critical failures are merely failures (and thus do not use extra bandages).                                                                                | All successes are critical successes (and will Heal side effects of a crippling injury).                                                                                                           |
+| Persuasion  | CH        | Followers will wait for one’s Character longer than normal.                                                                                | Gain a bonus of 1 extra follower in addition to Charisma Bonus.                                                                                | Anyone will join with the Character, regardless of reaction to one’s alignment.                                                                                                           |
+| Repair      | IN        | Reduction of max HP’s is only 5%.                                                                                | Reduction of max HP’s is only 1%.                                                                                | There is no reduction of max HP’s except on a critical failure. A Repair Master can fix broken items (items reduced to 0 hit points) but always at a cost of 5% of max HP’s.                                                                                                           |
+| Firearms    | PE        | The Speed of the Character with a gun is increased by 5.                                                                                | Called shots are made with 2/3 the penalty.                                                                                | The Character’s chance of success is unaffected by range penalties.                                                                                                           |
+| Pick Lock   | DX        | Pick lock action takes half as much time.                                                                                | The Character is unaffected by light penalties.                                                                                | The penalty based on the lock’s difficulty is halved.                                                                                                           |
+| Disarm Trap | PE        | The Character is unaffected by light penalties.                                                                                | If the Character critically succeeds at disarming, he gets an item that is part of the trap (such as arrows or dynamite).                                                                                | If the Character fails (but does not critically fail) at dis- arming a trap, he gets a second chance.                                                                                                           |
 
 ## Technology Degrees
 ### Requirements
@@ -1534,6 +1697,7 @@ Each schematic tier has an intelligence requirements:
 | 5    | 15             |
 | 6    | 17             |
 | 7     | 19               |
+
 ### Herbology
 #### Healing Salve
 - Minimum requirements: IN 5
