@@ -2340,6 +2340,32 @@ same time in the world. Any secondary casting, by any caster, automatically
 dispels the first spell. Also note that to dispel the spell directly, Disperse
 Magic must be cast on the caster himself.
 
+
+## Official Acronym Reference
+
+| Acronym | Reference |
+| ---- | ---- |
+| AC | armor class |
+| BE | beauty |
+| CH | charisma |
+| CN | constitution |
+| D | damage |
+| DR | damage resistance |
+| DX | dexterity |
+| ED | extra damage |
+| ER | electrical resistance |
+| FR | fire resistance |
+| FT | fatigue |
+| HT | health |
+| IN | intelligence |
+| MSR | minimum strength required |
+| NP | noise penalty |
+| PE | perception |
+| RNG | range |
+| ST | strength |
+| WP | willpower |
+| X | experience points |
+
 ## Auto Leveling Scheme
 
 [Link to Forum documentation](https://terra-arcanum.com/forums/threads/tutorial-custom-level-schemes.18507/)
