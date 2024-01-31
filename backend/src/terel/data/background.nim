@@ -84,7 +84,7 @@ type
   SpecialPerson* = object of Background
   TrollOffspring* = object of Background
   AfraidOfTheDark* = object of Background
-  AfraidOfTheDarkAgoraphobic* = object of Background
+  Agoraphobic* = object of Background
   ArmyTraining* = object of Background
   Arsonist* = object of Background
   Bandit* = object of Background
@@ -725,4 +725,64 @@ func createHyperactive*: Hyperactive =
     explosiveExpertiseMod: 0,
     extra: string.none,
     description: "You are constantly busy. Your Speed is higher than normal (+1), but most people find you annoying, and your Charisma suffers (-1)."
+  )
+
+func createInheritance*: Inheritance =
+  Inheritance(
+    id: -1,
+    name: "Inheritance",
+    strength: 0,
+    intelligence: 0,
+    constitution: 0,
+    willpower: -1,
+    dexterity: 0,
+    perception: 0,
+    beauty: 0,
+    charisma: 0,
+    hasGender: false,
+    technical: 0,
+    magickal: 0,
+    bow: 0,
+    dodge: 0,
+    melee: 0,
+    throwing: 0,
+    backstab: 0,
+    pickpocket: 0,
+    prowling: 0,
+    spottrap: 0,
+    gambling: 0,
+    haggle: 0,
+    heal: 0,
+    persuasion: 0,
+    techMod: 0,
+    repair: 0,
+    firearms: 0,
+    pickLock: 0,
+    disarmtrap: 0,
+    physDmgRes: 0,
+    fatigueDmgRes: 0,
+    magickRes: 0,
+    fireRes: 0,
+    poisonRes: 0,
+    electricalRes: 0,
+    critSuccessChance: 0,
+    critFailureChance: 0,
+    critHit: 0,
+    critFailure: 0,
+    speedMod: 0,
+    positiveReactionMod: 0,
+    negativeReactionMod: 0,
+    reactionMod: 0,
+    alignment: 0,
+    maxAlignment: 0,
+    goldMod: 800,
+    item1: string.none,
+    item2: string.none,
+    item3: string.none,
+    extraMagickPoints: 0,
+    genderLock: Any,
+    isTechLocked: false,
+    explosiveExpertiseMod: 0,
+    extra: string.none,
+    description: "You were orphaned as a young child and inherited a lot of money. The easy life has cost you a penalty to Willpower (-1). Most of the money has been spent by now, but you begin with twice the normal starting wealth."
   )
