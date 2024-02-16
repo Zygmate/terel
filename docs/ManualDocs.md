@@ -35,6 +35,10 @@ not available
 
 fatigued cost doubled when casting spells
 
+#### Age
+
+Their starting age is 100 years.
+
 #### Description
 
 >[!quote]
@@ -58,6 +62,10 @@ not available
 #### Extras
 
 +10 to any negative reaction
+
+#### Age
+
+Their starting age is 90 years.
 
 #### Description
 
@@ -88,6 +96,11 @@ none
 #### Extras
 
 +5% critical hit chance
+
+#### Age
+
+Their starting age is 50 years.
+
 
 #### Description
 
@@ -121,6 +134,11 @@ none
 +10% resistance to fatigue damage
 no one-handed guns
 
+#### Age
+
+Their starting age is 20 years.
+
+
 #### Description
 
 >[!quote]
@@ -150,6 +168,11 @@ none
 
 none
 
+#### Age
+
+Their starting age is 20 years.
+
+
 #### Description
 
 >[!quote]
@@ -177,6 +200,9 @@ available
 
 #### Extras
 
+#### Age
+
+Their starting age is 200 years.
 
 #### Description
 
@@ -205,6 +231,9 @@ available
 
 #### Extras
 
+#### Age
+
+Their starting age is 35 years.
 
 #### Description
 
@@ -234,6 +263,11 @@ none
 #### Extras
 
 +10% resistance to poison
+
+#### Age
+
+Their starting age is 15 years.
+
 
 #### Description
 
