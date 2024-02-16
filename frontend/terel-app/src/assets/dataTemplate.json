@@ -1,0 +1,90 @@
+{
+    "anagraphicLabels": ["Character Name:", "Gender:", "Race:", "Background:", "Age:"],
+    "baseStats": {
+        "strength": 8,
+        "constitution": 8,
+        "dexterity": 8,
+        "beauty": 8,
+        "intelligence": 8,
+        "willpower": 8,
+        "perception": 8,
+        "charisma": 8,
+        "health": 8,
+        "fatigue": 8
+    },
+    "backgrounds" : {
+        "none":{
+            "statModifiers": {},
+            "desc": "No particular background" 
+        },
+        "background1": {
+            "statModifiers": {
+                "strength": 1,
+                "dexterity": 2
+            },
+            "desc": "Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem" 
+
+        },
+        "background2": {
+            "statModifiers": {
+                "beauty": 1,
+                "charisma": 2
+            },
+            "desc": "Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem"
+        },
+        "background3": {
+            "statModifiers": {
+                "perception": 1,
+                "willpower": 2
+            },
+            "desc": "Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem"
+        },
+        "background4": {
+            "statModifiers": {
+            },
+            "desc": "Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem Lorem Ipsum Dolorem"
+        }
+    },
+    "races" : {
+        "race1": {
+            "statModifiers": {
+                "strength": 1,
+                "dexterity": 2
+            },
+            "age": 20,
+            "desc": ""
+        },
+        "race2": {
+            "statModifiers": {
+                "beauty": 1,
+                "charisma": 2
+            },
+            "age": 200,
+            "desc": ""
+        },
+        "race3": {
+            "statModifiers": {
+                "perception": 1,
+                "willpower": 2
+            },
+            "age": 100,
+            "desc": ""
+        },
+        "race4": {
+            "statModifiers": {
+                "perception": 1,
+                "willpower": 2
+            },
+            "age": 100,
+            "desc": ""
+        },
+        "race5": {
+            "statModifiers": {
+                "perception": 1,
+                "willpower": 2
+            },
+            "age": 100,
+            "desc": ""
+        }
+    }
+}

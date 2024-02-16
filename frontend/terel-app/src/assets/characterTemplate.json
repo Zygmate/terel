@@ -1,0 +1,34 @@
+{
+    "misc":{
+        "previewBackground":{}
+    },
+    "buildName": "",
+    "characterName": "",
+    "gender": {
+        "id": "male",
+        "statModifiers": {}
+    },
+    "race": {
+        "name": "human",
+        "statModifiers": {},
+        "desc":""
+    },
+    "background": {
+        "name":"none",
+        "statModifiers": {},
+        "desc": ""
+    },
+    "age": 0,
+    "initialStats":{
+        "strength": 8,
+        "constitution": 8,
+        "dexterity": 8,
+        "beauty": 8,
+        "intelligence": 8,
+        "willpower": 8,
+        "perception": 8,
+        "charisma": 8,
+        "health": 8,
+        "fatigue": 8
+    }
+}
