@@ -1,0 +1,12 @@
+func createEmptyShort*: EmptyShort =
+  EmptyShort(
+    id: -1,
+    name: "EmptyLong",
+    college: ,
+    minLVL: ,
+    minWP: ,
+    energy: ,
+    energyMaintainancePerTenSec: ,
+    isStackable: ,
+    description: 
+  )
