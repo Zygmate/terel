@@ -5,10 +5,13 @@ If you just need the binaries you can skip to the "Binaries" section.
 
 ## Prerequisites
 
-- [Tauri](https://tauri.app/v1/guides/getting-started/prerequisites)(install the 2.0.0 beta version!)
+- [Tauri](https://v2.tauri.app/start/prerequisites/)(install the 2.0.0 beta version!)
 - [Rust](https://www.rust-lang.org/tools/install)
 - [Node](https://nodejs.org/en) 20.8.0
 - [Yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable) 1.22.22
+
+### Tauri dependencies
+Mobile support for terel is not yet in plan but the project has the possibility to grow outside Desktop, all the dependencies for that must still be installed.
 
 ## Setting up the environment
 
