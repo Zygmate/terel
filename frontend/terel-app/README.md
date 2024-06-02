@@ -26,6 +26,8 @@ Or you can just build the current application with:
 
 `yarn tauri build`
 
-If you build the application this way all the binaries will be located at src-tauri/target/release and src-tauri/target/release/bundle to get all the executables.
+If you build the application this way all the binaries will be located at `src-tauri/target/release` and `src-tauri/target/release/bundle` to get all the executables.
 
-WARNING: the first (and only the first) time you launch the app wither in dev mode or in build mode it will require a bit of time. Every new launch after that is going to be super fast.
+WARNING: as of today crosscompiling is not supported which means every time you build the app it will compile ONLY in the current architecture.
+
+INFO: the first (and only the first) time you launch the app wither in dev mode or in build mode it will require a bit of time. Every new launch after that is going to be super fast.
