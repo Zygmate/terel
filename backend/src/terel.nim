@@ -25,9 +25,7 @@ import
     json
   ],
   pkg/[
-    #zero_functional
-    mummy,
-    mummy/routers
+    jesterfork
   ]
 
 const
@@ -119,67 +117,67 @@ const
 
 let logger = getLogger("terel")
 
-template initHeaders =
-  var headers {.inject.}: HttpHeaders
-  headers["Content-Type"] = "application/json"
+proc initHeaders: seq[(string, string)] =
+  result.add ("Content-Type", "application/json")
 
 when isMainModule:
   logger.log(lvlNotice, "appVersion:  " & appVersion)
   logger.log(lvlNotice, "appRevision: " & appRevision)
   logger.log(lvlNotice, "appDate:     " & appDate)
 
-  proc handlerTest(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, """{ "msg": "Hello, World!" }""")
+  template handlerTest(): untyped =
+    resp(Http200, initHeaders(), """{ "msg": "Hello, World!" }""")
 
-  proc handlerRace(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseRaces)
+  template handlerRace() =
+    resp(Http200, initHeaders(), responseRaces)
 
-  proc handlerRaceGnome(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseGnome)
+  template handlerRaceGnome() =
+    resp(Http200, initHeaders(), responseGnome)
 
-  proc handlerRaceDwarf(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseDwarf)
+  template handlerRaceDwarf() =
+    resp(Http200, initHeaders(), responseDwarf)
 
-  proc handlerRaceElf(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseElf)
+  template handlerRaceElf() =
+    resp(Http200, initHeaders(), responseElf)
 
-  proc handlerRaceHuman(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseHuman)
+  template handlerRaceHuman() =
+    resp(Http200, initHeaders(), responseHuman)
 
-  proc handlerRaceHalfling(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseHalfling)
+  template handlerRaceHalfling() =
+    resp(Http200, initHeaders(), responseHalfling)
 
-  proc handlerRaceHalfOgre(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseHalfOgre)
+  template handlerRaceHalfOgre() =
+    resp(Http200, initHeaders(), responseHalfOgre)
 
-  proc handlerRaceHalfOrc(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseHalfOrc)
+  template handlerRaceHalfOrc() =
+    resp(Http200, initHeaders(), responseHalfOrc)
 
-  proc handlerRaceHalfElf(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseHalfElf)
+  template handlerRaceHalfElf() =
+    resp(Http200, initHeaders(), responseHalfElf)
 
-  var router: Router
-  router.get("/test", handlerTest)
-  router.get("/race", handlerRace)
-  router.get("/race/gnome", handlerRaceGnome)
-  router.get("/race/dwarf", handlerRaceDwarf)
-  router.get("/race/elf", handlerRaceElf)
-  router.get("/race/human", handlerRaceHuman)
-  router.get("/race/halfling", handlerRaceHalfling)
-  router.get("/race/halfogre", handlerRaceHalfOgre)
-  router.get("/race/halforc", handlerRaceHalfOrc)
-  router.get("/race/halfelf", handlerRaceHalfElf)
+  settings:
+    port = Port(serverPort)
+    appName = ""
+    bindAddr = "0.0.0.0"
 
-  let server = newServer(router)
-  logger.log lvlNotice, "Serving on http://127.0.0.1:" & $serverPort
-  server.serve(serverPort.Port, address = "0.0.0.0")
+  routes:
+    get "/test":
+      handlerTest()
+    get "/race":
+      handlerRace()
+    get "/race/gnome":
+      handlerRaceGnome()
+    get "/race/dwarf":
+      handlerRaceDwarf()
+    get "/race/elf":
+      handlerRaceElf()
+    get "/race/human":
+      handlerRaceHuman()
+    get "/race/halfling":
+      handlerRaceHalfling()
+    get "/race/halfogre":
+      handlerRaceHalfOgre()
+    get "/race/halforc":
+      handlerRaceHalfOrc()
+    get "/race/halfelf":
+      handlerRaceHalfElf()
