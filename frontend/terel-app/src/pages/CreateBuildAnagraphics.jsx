@@ -1,12 +1,13 @@
-import Label from "./labels"
-import DropDownLabel from "./dropdownlabel"
-import InitialStatAtom from "./initialStatsAtom"
 import { useEffect, useReducer, useState } from "react"
+import { Form, useNavigate } from "react-router-dom"
+import Label from "../components/labels"
+import DropDownLabel from "../components/dropdownlabel"
+import InitialStatAtom from "../components/initialStatsAtom"
+import TextInput from "../components/textInput"
+import ToggleText from "../components/toggle"
+
 import infos from "../assets/dataTemplate.json"
 import characterTemplate from "../assets/characterTemplate.json"
-import TextInput from "./textInput"
-import ToggleText from "./toggle"
-import { Form } from "react-router-dom"
 
 const ACTIONS = {
     setBackground: "setBackground",
@@ -51,8 +52,9 @@ function reducer(state, {type, payload}) {
 
 }
 
-export default function AnagraphicForm() {
+export default function CreateBuildAnagraphics() {
     const [characterSheet, dispatch] = useReducer(reducer, characterTemplate)
+    const navigate = useNavigate()
     function handleForm(e) { 
         e.preventDefault()
     }
@@ -89,7 +91,7 @@ export default function AnagraphicForm() {
                 <p className="paragraph">{characterSheet.background.desc || "Choose a background to get some descriptions about it!"}</p>
             </div>
             <div className="build-controls grid grid-centered">
-                <button>Next</button>
+                <button className="btn btn-default" onClick={() => navigate("/new/build/"+ crypto.randomUUID())} >NEXT</button>
             </div>
         </Form>
     )

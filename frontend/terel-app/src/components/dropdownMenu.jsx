@@ -1,9 +1,10 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Label from "./labels";
 
 export default function DropdownMenu({ dropdownNames, setLabel,mounted, setIsOpen, options }) {
     const [filteredList, setFilteredList] = useState(dropdownNames)
 
+    //TODO: FIX modal inner width
     const mountedStyle = {animation: "growMenu 100ms ease-in-out forwards"}
     const unMountedStyle = {animation: "shrinkMenu 100ms ease-in-out forwards"}
     

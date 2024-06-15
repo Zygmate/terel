@@ -31,7 +31,7 @@ export default function DropDownLabel({ options, dropdownNames }) {
             <div className="modal-label grid" onClick={() => toggleDropdown()}>
                 <input className="dropdown-input" htmlFor="gender" type="radio" name="gender" value={toggleLabel} />
                 <Label inner={toggleLabel} />
-                <button type="button" >
+                <button className="btn" type="button" >
                     <img src={ArrowDown} alt="Toggle Button" />
                 </button>
             </div>
