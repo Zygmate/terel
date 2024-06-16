@@ -1,34 +1,46 @@
 {
-  "productName": "Ter'El Blessing",
-  "version": "0.0.0",
-  "identifier": "com.terel.www",
-  "build": {
-    "beforeDevCommand": "yarn dev",
-    "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "yarn build",
-    "frontendDist": "../dist"
-  },
-  "app": {
-    "windows": [
-      {
-        "title": "Ter'El Blessing",
-        "width": 800,
-        "height": 600
-      }
-    ],
-    "security": {
-      "csp": null
+    "productName": "Ter'El Blessing",
+    "version": "0.0.0",
+    "identifier": "com.terel.www",
+    "build": {
+        "beforeDevCommand": "yarn dev",
+        "devUrl": "http://localhost:1420",
+        "beforeBuildCommand": "yarn build",
+        "frontendDist": "../dist"
+    },
+    "app": {
+        "windows": [
+            {
+                "title": "Ter'El Blessing",
+                "width": 800,
+                "height": 600
+            }
+        ],
+        "security": {
+            "csp": null
+            "capabilities": [{
+                "$schema": "../gen/schemas/desktop-schema.json",
+                "identifier": "network-capability",
+                "description": "Network access capability",
+                "windows": ["*"],
+                "permissions": [
+                    {
+                        "identifier": "http:default",
+                        "allow": [{ "url": "http://127.0.0.1:1337" }]
+                    }
+                ]
+            }]
+        }
+    },
+    "bundle": {
+        "active": true,
+        "targets": "all",
+        "icon": [
+            "icons/32x32.png",
+            "icons/128x128.png",
+            "icons/128x128@2x.png",
+            "icons/icon.icns",
+            "icons/icon.ico"
+        ]
     }
-  },
-  "bundle": {
-    "active": true,
-    "targets": "all",
-    "icon": [
-      "icons/32x32.png",
-      "icons/128x128.png",
-      "icons/128x128@2x.png",
-      "icons/icon.icns",
-      "icons/icon.ico"
-    ]
-  }
 }
