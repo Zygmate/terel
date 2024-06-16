@@ -1,6 +1,7 @@
 type
   Race* = object of RootObj
     id*: int
+    name*: string
     strength*: int
     intelligence*: int
     constitution*: int
@@ -53,6 +54,7 @@ type
 func createGnome*: Gnome =
   Gnome(
     id: -1,
+    name: "Gnome",
     strength: 0,
     intelligence: 0,
     constitution: -2,
@@ -97,6 +99,7 @@ func createGnome*: Gnome =
 func createDwarf*: Dwarf =
   Dwarf(
     id: -1,
+    name: "Dwarf",
     strength: 1,
     intelligence: 0,
     constitution: 1,
@@ -141,6 +144,7 @@ func createDwarf*: Dwarf =
 func createElf*: Elf =
   Elf(
     id: -1,
+    name: "Elf",
     strength: -1,
     intelligence: 0,
     constitution: -2,
@@ -185,6 +189,7 @@ func createElf*: Elf =
 func createHuman*: Human =
   Human(
     id: -1,
+    name: "Human",
     strength: 0,
     intelligence: 0,
     constitution: 0,
@@ -229,6 +234,7 @@ func createHuman*: Human =
 func createHalfling*: Halfling =
   Halfling(
     id: -1,
+    name: "Halfling",
     strength: -3,
     intelligence: 0,
     constitution: 0,
@@ -274,6 +280,7 @@ func createHalfling*: Halfling =
 func createHalfOgre*: HalfOgre =
   HalfOgre(
     id: -1,
+    name: "HalfOgre",
     strength: 4,
     intelligence: -4,
     constitution: 0,
@@ -319,6 +326,7 @@ func createHalfOgre*: HalfOgre =
 func createHalfOrc*: HalfOrc =
   HalfOrc(
     id: -1,
+    name: "HalfOrc",
     strength: 1,
     intelligence: 0,
     constitution: 1,
@@ -364,6 +372,7 @@ func createHalfOrc*: HalfOrc =
 func createHalfElf*: HalfElf =
   HalfElf(
     id: -1,
+    name: "HalfElf",
     strength: 0,
     intelligence: 0,
     constitution: -1,

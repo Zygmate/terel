@@ -1,7 +1,6 @@
 
 # Welcome to the frontend README
 In the next few sections I will go through the pricess of getting started and setup the environment both for development purposes as well as production.
-If you just need the binaries you can skip to the "Binaries" section.
 
 ## Prerequisites
 
@@ -27,12 +26,8 @@ Or you can just build the current application with:
 
 `yarn tauri build`
 
-If you build the application this way all the binaries will be located at src-tauri/target/release and src-tauri/target/release/bundle to get all the executables.
+If you build the application this way all the binaries will be located at `src-tauri/target/release` and `src-tauri/target/release/bundle` to get all the executables.
 
-WARNING: the first (and only the first) time you launch the app wither in dev mode or in build mode it will require a bit of time. Every new launch after that is going to be super fast.
+WARNING: as of today crosscompiling is not supported which means every time you build the app it will compile ONLY in the current architecture.
 
-
-## Binaries
-
-If you just want the executables to the latest release you can get them from src-taur/target/release and src-tauri/target/release/bundle.
-Releases are done periodically and are considered up to date.
+INFO: the first (and only the first) time you launch the app wither in dev mode or in build mode it will require a bit of time. Every new launch after that is going to be super fast.

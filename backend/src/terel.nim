@@ -25,14 +25,11 @@ import
     json
   ],
   pkg/[
-    #zero_functional
-    mummy,
-    mummy/routers
+    jesterfork
   ]
 
 const
   serverPort = 58111
-  httpCodeOK = 200
   responseRaces = $ %containRace([%createGnome(), %createDwarf(), %createElf(), %createHuman(), %createHalfling(), %createHalfOgre(), %createHalfOrc(), %createHalfElf()])
   responseGnome = $ %containRace([%createGnome()])
   responseDwarf = $ %containRace([%createDwarf()])
@@ -119,67 +116,387 @@ const
 
 let logger = getLogger("terel")
 
-template initHeaders =
-  var headers {.inject.}: HttpHeaders
-  headers["Content-Type"] = "application/json"
+proc initHeaders: seq[(string, string)] =
+  result.add ("Content-Type", "application/json")
 
 when isMainModule:
   logger.log(lvlNotice, "appVersion:  " & appVersion)
   logger.log(lvlNotice, "appRevision: " & appRevision)
   logger.log(lvlNotice, "appDate:     " & appDate)
 
-  proc handlerTest(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, """{ "msg": "Hello, World!" }""")
+  template handlerTest(): untyped =
+    resp(Http200, initHeaders(), """{ "msg": "Hello, World!" }""")
 
-  proc handlerRace(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseRaces)
+  template handlerRace() =
+    resp(Http200, initHeaders(), responseRaces)
 
-  proc handlerRaceGnome(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseGnome)
+  template handlerRaceGnome() =
+    resp(Http200, initHeaders(), responseGnome)
 
-  proc handlerRaceDwarf(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseDwarf)
+  template handlerRaceDwarf() =
+    resp(Http200, initHeaders(), responseDwarf)
 
-  proc handlerRaceElf(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseElf)
+  template handlerRaceElf() =
+    resp(Http200, initHeaders(), responseElf)
 
-  proc handlerRaceHuman(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseHuman)
+  template handlerRaceHuman() =
+    resp(Http200, initHeaders(), responseHuman)
 
-  proc handlerRaceHalfling(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseHalfling)
+  template handlerRaceHalfling() =
+    resp(Http200, initHeaders(), responseHalfling)
 
-  proc handlerRaceHalfOgre(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseHalfOgre)
+  template handlerRaceHalfOgre() =
+    resp(Http200, initHeaders(), responseHalfOgre)
 
-  proc handlerRaceHalfOrc(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseHalfOrc)
+  template handlerRaceHalfOrc() =
+    resp(Http200, initHeaders(), responseHalfOrc)
 
-  proc handlerRaceHalfElf(request: Request) =
-    initHeaders
-    request.respond(httpCodeOK, headers, responseHalfElf)
+  template handlerRaceHalfElf() =
+    resp(Http200, initHeaders(), responseHalfElf)
 
-  var router: Router
-  router.get("/test", handlerTest)
-  router.get("/race", handlerRace)
-  router.get("/race/gnome", handlerRaceGnome)
-  router.get("/race/dwarf", handlerRaceDwarf)
-  router.get("/race/elf", handlerRaceElf)
-  router.get("/race/human", handlerRaceHuman)
-  router.get("/race/halfling", handlerRaceHalfling)
-  router.get("/race/halfogre", handlerRaceHalfOgre)
-  router.get("/race/halforc", handlerRaceHalfOrc)
-  router.get("/race/halfelf", handlerRaceHalfElf)
+  template handlerBackground() =
+    resp(Http200, initHeaders(), responseBackgrounds)
 
-  let server = newServer(router)
-  logger.log lvlNotice, "Serving on http://127.0.0.1:" & $serverPort
-  server.serve(serverPort.Port, address = "0.0.0.0")
+  template handlerBackgroundApprenticedToABlacksmith() =
+    resp(Http200, initHeaders(), responseApprenticedToABlacksmith)
+
+  template handlerBackgroundApprenticedToAShopkeeper() =
+    resp(Http200, initHeaders(), responseApprenticedToAShopkeeper)
+
+  template handlerBackgroundBeatWithAnUglyStick() =
+    resp(Http200, initHeaders(), responseBeatWithAnUglyStick)
+
+  template handlerBackgroundBornUnderASign() =
+    resp(Http200, initHeaders(), responseBornUnderASign)
+
+  template handlerBackgroundChildOfAHero() =
+    resp(Http200, initHeaders(), responseChildOfAHero)
+
+  template handlerBackgroundDarkSight() =
+    resp(Http200, initHeaders(), responseDarkSight)
+
+  template handlerBackgroundEducator() =
+    resp(Http200, initHeaders(), responseEducator)
+
+  template handlerBackgroundExtremePersonality() =
+    resp(Http200, initHeaders(), responseExtremePersonality)
+
+  template handlerBackgroundHyperactive() =
+    resp(Http200, initHeaders(), responseHyperactive)
+
+  template handlerBackgroundInheritance() =
+    resp(Http200, initHeaders(), responseInheritance)
+
+  template handlerBackgroundMadDoctor() =
+    resp(Http200, initHeaders(), responseMadDoctor)
+
+  template handlerBackgroundMiracleOperation() =
+    resp(Http200, initHeaders(), responseMiracleOperation)
+
+  template handlerBackgroundNietzschePosterChild() =
+    resp(Http200, initHeaders(), responseNietzschePosterChild)
+
+  template handlerBackgroundOnlyChild() =
+    resp(Http200, initHeaders(), responseOnlyChild)
+
+  template handlerBackgroundProfessionalKnifeTosser() =
+    resp(Http200, initHeaders(), responseProfessionalKnifeTosser)
+
+  template handlerBackgroundRaisedByMonks() =
+    resp(Http200, initHeaders(), responseRaisedByMonks)
+
+  template handlerBackgroundRaisedBySnakeHandlers() =
+    resp(Http200, initHeaders(), responseRaisedBySnakeHandlers)
+
+  template handlerBackgroundRaisedInThePits() =
+    resp(Http200, initHeaders(), responseRaisedInThePits)
+
+  template handlerBackgroundRanAwayWithTheCircus() =
+    resp(Http200, initHeaders(), responseRanAwayWithTheCircus)
+
+  template handlerBackgroundSickly() =
+    resp(Http200, initHeaders(), responseSickly)
+
+  template handlerBackgroundSoldYourSoul() =
+    resp(Http200, initHeaders(), responseSoldYourSoul)
+
+  template handlerBackgroundSpecialPerson() =
+    resp(Http200, initHeaders(), responseSpecialPerson)
+
+  template handlerBackgroundTrollOffspring() =
+    resp(Http200, initHeaders(), responseTrollOffspring)
+
+  template handlerBackgroundAfraidOfTheDark() =
+    resp(Http200, initHeaders(), responseAfraidOfTheDark)
+
+  template handlerBackgroundAgoraphobic() =
+    resp(Http200, initHeaders(), responseAgoraphobic)
+
+  template handlerBackgroundArmyTraining() =
+    resp(Http200, initHeaders(), responseArmyTraining)
+
+  template handlerBackgroundArsonist() =
+    resp(Http200, initHeaders(), responseArsonist)
+
+  template handlerBackgroundBandit() =
+    resp(Http200, initHeaders(), responseBandit)
+
+  template handlerBackgroundBarbarian() =
+    resp(Http200, initHeaders(), responseBarbarian)
+
+  template handlerBackgroundBookworm() =
+    resp(Http200, initHeaders(), responseBookworm)
+
+  template handlerBackgroundBrideOfFrankenstein() =
+    resp(Http200, initHeaders(), responseBrideOfFrankenstein)
+
+  template handlerBackgroundBully() =
+    resp(Http200, initHeaders(), responseBully)
+
+  template handlerBackgroundCharlatansProtege() =
+    resp(Http200, initHeaders(), responseCharlatansProtege)
+
+  template handlerBackgroundClanlessDwarf() =
+    resp(Http200, initHeaders(), responseClanlessDwarf)
+
+  template handlerBackgroundDarkElfFollower() =
+    resp(Http200, initHeaders(), responseDarkElfFollower)
+
+  template handlerBackgroundDayMage() =
+    resp(Http200, initHeaders(), responseDayMage)
+
+  template handlerBackgroundDisenfranchisedGnome() =
+    resp(Http200, initHeaders(), responseDisenfranchisedGnome)
+
+  template handlerBackgroundElvenBlood() =
+    resp(Http200, initHeaders(), responseElvenBlood)
+
+  template handlerBackgroundEscapedLunatic() =
+    resp(Http200, initHeaders(), responseEscapedLunatic)
+
+  template handlerBackgroundFactoryEscapee() =
+    resp(Http200, initHeaders(), responseFactoryEscapee)
+
+  template handlerBackgroundFeralChild() =
+    resp(Http200, initHeaders(), responseFeralChild)
+
+  template handlerBackgroundFoppishElf() =
+    resp(Http200, initHeaders(), responseFoppishElf)
+
+  template handlerBackgroundFrankensteinMonster() =
+    resp(Http200, initHeaders(), responseFrankensteinMonster)
+
+  template handlerBackgroundFreedBodyguard() =
+    resp(Http200, initHeaders(), responseFreedBodyguard)
+
+  template handlerBackgroundHalflingOrphan() =
+    resp(Http200, initHeaders(), responseHalflingOrphan)
+
+  template handlerBackgroundHydrophobic() =
+    resp(Http200, initHeaders(), responseHydrophobic)
+
+  template handlerBackgroundIdiotSavant() =
+    resp(Http200, initHeaders(), responseIdiotSavant)
+
+  template handlerBackgroundLadysMan() =
+    resp(Http200, initHeaders(), responseLadysMan)
+
+  template handlerBackgroundMagickAllergy() =
+    resp(Http200, initHeaders(), responseMagickAllergy)
+
+  template handlerBackgroundNatureMage() =
+    resp(Http200, initHeaders(), responseNatureMage)
+
+  template handlerBackgroundNightMage() =
+    resp(Http200, initHeaders(), responseNightMage)
+
+  template handlerBackgroundRaisedByElves() =
+    resp(Http200, initHeaders(), responseRaisedByElves)
+
+  template handlerBackgroundRaisedByOrcs() =
+    resp(Http200, initHeaders(), responseRaisedByOrcs)
+
+  template handlerBackgroundRareHalfOgreBirth() =
+    resp(Http200, initHeaders(), responseRareHalfOgreBirth)
+
+  template handlerBackgroundSentToCharmSchool() =
+    resp(Http200, initHeaders(), responseSentToCharmSchool)
+
+  template handlerBackgroundShelteredChildhood() =
+    resp(Http200, initHeaders(), responseShelteredChildhood)
+
+  template handlerBackgroundSkyMage() =
+    resp(Http200, initHeaders(), responseSkyMage)
+
+  template handlerBackgroundSuperModel() =
+    resp(Http200, initHeaders(), responseSuperModel)
+
+  template handlerBackgroundSuppressedOrcishLooks() =
+    resp(Http200, initHeaders(), responseSuppressedOrcishLooks)
+
+  template handlerBackgroundTechnophobia() =
+    resp(Http200, initHeaders(), responseTechnophobia)
+
+  template handlerBackgroundTomboy() =
+    resp(Http200, initHeaders(), responseTomboy)
+
+  template handlerBackgroundToughHide() =
+    resp(Http200, initHeaders(), responseToughHide)
+
+  template handlerBackgroundWildHalfOgre() =
+    resp(Http200, initHeaders(), responseWildHalfOgre)
+
+  settings:
+    port = Port(serverPort)
+    appName = ""
+    bindAddr = "0.0.0.0"
+
+  routes:
+    get "/test":
+      handlerTest()
+    get "/race":
+      handlerRace()
+    get "/race/gnome":
+      handlerRaceGnome()
+    get "/race/dwarf":
+      handlerRaceDwarf()
+    get "/race/elf":
+      handlerRaceElf()
+    get "/race/human":
+      handlerRaceHuman()
+    get "/race/halfling":
+      handlerRaceHalfling()
+    get "/race/halfogre":
+      handlerRaceHalfOgre()
+    get "/race/halforc":
+      handlerRaceHalfOrc()
+    get "/race/halfelf":
+      handlerRaceHalfElf()
+    get "/background":
+      handlerBackground()
+    get "/background/ApprenticedToABlacksmith":
+      handlerBackgroundApprenticedToABlacksmith()
+    get "/background/ApprenticedToAShopkeeper":
+      handlerBackgroundApprenticedToAShopkeeper()
+    get "/background/BeatWithAnUglyStick":
+      handlerBackgroundBeatWithAnUglyStick()
+    get "/background/BornUnderASign":
+      handlerBackgroundBornUnderASign()
+    get "/background/ChildOfAHero":
+      handlerBackgroundChildOfAHero()
+    get "/background/DarkSight":
+      handlerBackgroundDarkSight()
+    get "/background/Educator":
+      handlerBackgroundEducator()
+    get "/background/ExtremePersonality":
+      handlerBackgroundExtremePersonality()
+    get "/background/Hyperactive":
+      handlerBackgroundHyperactive()
+    get "/background/Inheritance":
+      handlerBackgroundInheritance()
+    get "/background/MadDoctor":
+      handlerBackgroundMadDoctor()
+    get "/background/MiracleOperation":
+      handlerBackgroundMiracleOperation()
+    get "/background/NietzschePosterChild":
+      handlerBackgroundNietzschePosterChild()
+    get "/background/OnlyChild":
+      handlerBackgroundOnlyChild()
+    get "/background/ProfessionalKnifeTosser":
+      handlerBackgroundProfessionalKnifeTosser()
+    get "/background/RaisedByMonks":
+      handlerBackgroundRaisedByMonks()
+    get "/background/RaisedBySnakeHandlers":
+      handlerBackgroundRaisedBySnakeHandlers()
+    get "/background/RaisedInThePits":
+      handlerBackgroundRaisedInThePits()
+    get "/background/RanAwayWithTheCircus":
+      handlerBackgroundRanAwayWithTheCircus()
+    get "/background/Sickly":
+      handlerBackgroundSickly()
+    get "/background/SoldYourSoul":
+      handlerBackgroundSoldYourSoul()
+    get "/background/SpecialPerson":
+      handlerBackgroundSpecialPerson()
+    get "/background/TrollOffspring":
+      handlerBackgroundTrollOffspring()
+    get "/background/AfraidOfTheDark":
+      handlerBackgroundAfraidOfTheDark()
+    get "/background/Agoraphobic":
+      handlerBackgroundAgoraphobic()
+    get "/background/ArmyTraining":
+      handlerBackgroundArmyTraining()
+    get "/background/Arsonist":
+      handlerBackgroundArsonist()
+    get "/background/Bandit":
+      handlerBackgroundBandit()
+    get "/background/Barbarian":
+      handlerBackgroundBarbarian()
+    get "/background/Bookworm":
+      handlerBackgroundBookworm()
+    get "/background/BrideOfFrankenstein":
+      handlerBackgroundBrideOfFrankenstein()
+    get "/background/Bully":
+      handlerBackgroundBully()
+    get "/background/CharlatansProtege":
+      handlerBackgroundCharlatansProtege()
+    get "/background/ClanlessDwarf":
+      handlerBackgroundClanlessDwarf()
+    get "/background/DarkElfFollower":
+      handlerBackgroundDarkElfFollower()
+    get "/background/DayMage":
+      handlerBackgroundDayMage()
+    get "/background/DisenfranchisedGnome":
+      handlerBackgroundDisenfranchisedGnome()
+    get "/background/ElvenBlood":
+      handlerBackgroundElvenBlood()
+    get "/background/EscapedLunatic":
+      handlerBackgroundEscapedLunatic()
+    get "/background/FactoryEscapee":
+      handlerBackgroundFactoryEscapee()
+    get "/background/FeralChild":
+      handlerBackgroundFeralChild()
+    get "/background/FoppishElf":
+      handlerBackgroundFoppishElf()
+    get "/background/FrankensteinMonster":
+      handlerBackgroundFrankensteinMonster()
+    get "/background/FreedBodyguard":
+      handlerBackgroundFreedBodyguard()
+    get "/background/HalflingOrphan":
+      handlerBackgroundHalflingOrphan()
+    get "/background/Hydrophobic":
+      handlerBackgroundHydrophobic()
+    get "/background/IdiotSavant":
+      handlerBackgroundIdiotSavant()
+    get "/background/LadysMan":
+      handlerBackgroundLadysMan()
+    get "/background/MagickAllergy":
+      handlerBackgroundMagickAllergy()
+    get "/background/NatureMage":
+      handlerBackgroundNatureMage()
+    get "/background/NightMage":
+      handlerBackgroundNightMage()
+    get "/background/RaisedByElves":
+      handlerBackgroundRaisedByElves()
+    get "/background/RaisedByOrcs":
+      handlerBackgroundRaisedByOrcs()
+    get "/background/RareHalfOgreBirth":
+      handlerBackgroundRareHalfOgreBirth()
+    get "/background/SentToCharmSchool":
+      handlerBackgroundSentToCharmSchool()
+    get "/background/ShelteredChildhood":
+      handlerBackgroundShelteredChildhood()
+    get "/background/SkyMage":
+      handlerBackgroundSkyMage()
+    get "/background/SuperModel":
+      handlerBackgroundSuperModel()
+    get "/background/SuppressedOrcishLooks":
+      handlerBackgroundSuppressedOrcishLooks()
+    get "/background/Technophobia":
+      handlerBackgroundTechnophobia()
+    get "/background/Tomboy":
+      handlerBackgroundTomboy()
+    get "/background/ToughHide":
+      handlerBackgroundToughHide()
+    get "/background/WildHalfOgre":
+      handlerBackgroundWildHalfOgre()

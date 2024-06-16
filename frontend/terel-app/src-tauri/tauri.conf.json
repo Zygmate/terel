@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
     "productName": "Ter'El Blessing",
     "version": "0.0.0",
     "identifier": "com.terel.www",
+=======
+    "productName": "tauri-app",
+    "version": "0.0.0",
+    "identifier": "com.tauri.dev",
+>>>>>>> 728f851c5ec5fd0084587acf402163f61998fba1
     "build": {
         "beforeDevCommand": "yarn dev",
         "devUrl": "http://localhost:1420",
@@ -11,13 +17,18 @@
     "app": {
         "windows": [
             {
+<<<<<<< HEAD
                 "title": "Ter'El Blessing",
+=======
+                "title": "tauri-app",
+>>>>>>> 728f851c5ec5fd0084587acf402163f61998fba1
                 "width": 800,
                 "height": 600
             }
         ],
         "security": {
             "csp": null
+<<<<<<< HEAD
             "capabilities": [{
                 "$schema": "../gen/schemas/desktop-schema.json",
                 "identifier": "network-capability",
@@ -30,6 +41,8 @@
                     }
                 ]
             }]
+=======
+>>>>>>> 728f851c5ec5fd0084587acf402163f61998fba1
         }
     },
     "bundle": {
