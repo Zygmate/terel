@@ -12,12 +12,12 @@
         "windows": [
             {
                 "title": "Ter'El Blessing",
-                "width": 800,
-                "height": 600
+                "width": 1600,
+                "height": 900
             }
         ],
         "security": {
-            "csp": null
+            "csp": null,
             "capabilities": [{
                 "$schema": "../gen/schemas/desktop-schema.json",
                 "identifier": "network-capability",
