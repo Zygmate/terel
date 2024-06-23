@@ -1,0 +1,10 @@
+func createEmptyShort*: EmptyShort =
+  EmptyShort(
+    id: -1,
+    name: "EmptyLong",
+    discipline: ,
+    minIN: ,
+    component1: ,
+    component2: ,
+    description: 
+  )
