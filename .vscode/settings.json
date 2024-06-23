@@ -1,0 +1,6 @@
+{
+  "rust-analyzer.linkedProjects": [
+    "frontend/terel-app/src-tauri/Cargo.toml"
+  ],
+  "ansible.python.interpreterPath": "/bin/python3"
+}
