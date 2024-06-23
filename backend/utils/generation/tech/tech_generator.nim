@@ -144,7 +144,7 @@ proc run =
         elif entry[0].isDigit or key in ["discipline"]:
           temp.insert(entry, idxKeyEnd.succ)
         else:
-          temp.insert('"' & pascal(entry) & '"', idxKeyEnd.succ)
+          temp.insert('"' & entry.replace("'", "").pascal & '"', idxKeyEnd.succ)
 
     streamFileOutput.writeLine "\n" & temp
     temp = techTemplate

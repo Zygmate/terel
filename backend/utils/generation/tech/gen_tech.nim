@@ -82,8 +82,8 @@ func createStrongPoison*: StrongPoison =
     name: "strong poison",
     discipline: Chemistry,
     minIN: 5,
-    component1: "Varham'sAquaVitae",
-    component2: "Monroe'sCleaner",
+    component1: "VarhamsAquaVitae",
+    component2: "MonroesCleaner",
     description: """Adds 290 points of Poison to the target, 3 units are made"""
   )
 
@@ -115,7 +115,7 @@ func createCorrosiveAcid*: CorrosiveAcid =
     name: "corrosive acid",
     discipline: Chemistry,
     minIN: 13,
-    component1: "Pete'sCarbolicAcid",
+    component1: "PetesCarbolicAcid",
     component2: "SulphurPills",
     description: """Thrown weapon similar to a grenade, 1 unit is made"""
   )
@@ -127,7 +127,7 @@ func createHallucinate*: Hallucinate =
     discipline: Chemistry,
     minIN: 15,
     component1: "Mushroom",
-    component2: "Varham'sAquaVitae",
+    component2: "VarhamsAquaVitae",
     description: """Causes the target to attempt to flee, 1 unit is made"""
   )
 
@@ -258,7 +258,7 @@ func createSmokeGrenade*: SmokeGrenade =
     name: "smoke grenade",
     discipline: Explosives,
     minIN: 11,
-    component1: "Tom'sFertilizer",
+    component1: "TomsFertilizer",
     component2: "CkSugar",
     description: """Creates a 6x4 area of smoke within which ranged attacks are prevented, 5 units are made"""
   )
@@ -357,7 +357,7 @@ func createLookingGlassRifle*: LookingGlassRifle =
     name: "looking glass rifle",
     discipline: GunSmithy,
     minIN: 15,
-    component1: "Marksman'sRifle",
+    component1: "MarksmansRifle",
     component2: "LookingGlass",
     description: """D 40-40; FT 40-40; TH +20; RNG 25; speed 1"""
   )
@@ -567,7 +567,7 @@ func createLiquidOfAwareness*: LiquidOfAwareness =
     discipline: Therapeutics,
     minIN: 11,
     component1: "MigrainCure",
-    component2: "Doolittle'sGlyceride",
+    component2: "DoolittlesGlyceride",
     description: """2 Perception for 4 hours, 3 units are made"""
   )
 

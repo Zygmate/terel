@@ -18,7 +18,8 @@ import
   ],
   terel/data/[
     race,
-    background
+    background,
+    tech
   ],
   std/[
     segfaults,
@@ -103,6 +104,62 @@ const
   responseTomboy = $ %containBackground([%createTomboy()])
   responseToughHide = $ %containBackground([%createToughHide()])
   responseWildHalfOgre = $ %containBackground([%createWildHalfOgre()])
+  responseTech = $ %containRace([%createHealingSalve(), %createFatigueRestorer(), %createPoisonCure(), %createFatigueLimiter(), %createAccelerateHealing(), %createWonderDrug(), %createCureAll(), %createStrongPoison(), %createCharges(), %createAnimalScent(), %createCorrosiveAcid(), %createHallucinate(), %createParalyzer(), %createAnaesthisizer(), %createElectricLight(), %createChargedRing(), %createFlowSpectrometer(), %createShockingTraffic(), %createChapeuOfMagneticInversion(), %createHealingJacket(), %createTeslaRod(), %createMolotovCocktail(), %createFlashGrenade(), %createSmokeGrenade(), %createStunGrenade(), %createExplosiveGrenade(), %createFireObstruction(), %createDynamite(), %createHandCraftFlintlock(), %createFineRevolver(), %createRepeaterRifle(), %createHushedRevolver(), %createLookingGlassRifle(), %createHandCannon(), %createElephantGun(), %createSpikeTrap(), %createTrapSpringer(), %createAutoSkeletonKey(), %createEyeGear(), %createBearTrap(), %createClockworDecoy(), %createMechanizedArachnid(), %createPureOre(), %createBalancedSword(), %createFeatherWeightAxe(), %createDwarvenGauntlets(), %createHelmetOfVision(), %createFeatherWeightChainmail(), %createElitePlatemail(), %createElixirOfPersuasion(), %createElixirOfPhysicalProwess(), %createLiquidOfAwareness(), %createTonicOfIncreasedReflexes(), %createMindMarvel(), %createEnergizer(), %createRevitalizer()])
+  responseHealingSalve = $ %containTech([%createHealingSalve()])
+  responseFatigueRestorer = $ %containTech([%createFatigueRestorer()])
+  responsePoisonCure = $ %containTech([%createPoisonCure()])
+  responseFatigueLimiter = $ %containTech([%createFatigueLimiter()])
+  responseAccelerateHealing = $ %containTech([%createAccelerateHealing()])
+  responseWonderDrug = $ %containTech([%createWonderDrug()])
+  responseCureAll = $ %containTech([%createCureAll()])
+  responseStrongPoison = $ %containTech([%createStrongPoison()])
+  responseCharges = $ %containTech([%createCharges()])
+  responseAnimalScent = $ %containTech([%createAnimalScent()])
+  responseCorrosiveAcid = $ %containTech([%createCorrosiveAcid()])
+  responseHallucinate = $ %containTech([%createHallucinate()])
+  responseParalyzer = $ %containTech([%createParalyzer()])
+  responseAnaesthisizer = $ %containTech([%createAnaesthisizer()])
+  responseChargedRing = $ %containTech([%createChargedRing()])
+  responseFlowSpectrometer = $ %containTech([%createFlowSpectrometer()])
+  responseShockingTraffic = $ %containTech([%createShockingTraffic()])
+  responseChapeuOfMagneticInversion = $ %containTech([%createChapeuOfMagneticInversion()])
+  responseHealingJacket = $ %containTech([%createHealingJacket()])
+  responseTeslaRod = $ %containTech([%createTeslaRod()])
+  responseMolotovCocktail = $ %containTech([%createMolotovCocktail()])
+  responseFlashGrenade = $ %containTech([%createFlashGrenade()])
+  responseSmokeGrenade = $ %containTech([%createSmokeGrenade()])
+  responseStunGrenade = $ %containTech([%createStunGrenade()])
+  responseExplosiveGrenade = $ %containTech([%createExplosiveGrenade()])
+  responseFireObstruction = $ %containTech([%createFireObstruction()])
+  responseDynamite = $ %containTech([%createDynamite()])
+  responseHandCraftFlintlock = $ %containTech([%createHandCraftFlintlock()])
+  responseFineRevolver = $ %containTech([%createFineRevolver()])
+  responseRepeaterRifle = $ %containTech([%createRepeaterRifle()])
+  responseHushedRevolver = $ %containTech([%createHushedRevolver()])
+  responseLookingGlassRifle = $ %containTech([%createLookingGlassRifle()])
+  responseHandCannon = $ %containTech([%createHandCannon()])
+  responseElephantGun = $ %containTech([%createElephantGun()])
+  responseSpikeTrap = $ %containTech([%createSpikeTrap()])
+  responseTrapSpringer = $ %containTech([%createTrapSpringer()])
+  responseAutoSkeletonKey = $ %containTech([%createAutoSkeletonKey()])
+  responseEyeGear = $ %containTech([%createEyeGear()])
+  responseBearTrap = $ %containTech([%createBearTrap()])
+  responseClockworDecoy = $ %containTech([%createClockworDecoy()])
+  responseMechanizedArachnid = $ %containTech([%createMechanizedArachnid()])
+  responsePureOre = $ %containTech([%createPureOre()])
+  responseBalancedSword = $ %containTech([%createBalancedSword()])
+  responseFeatherWeightAxe = $ %containTech([%createFeatherWeightAxe()])
+  responseDwarvenGauntlets = $ %containTech([%createDwarvenGauntlets()])
+  responseHelmetOfVision = $ %containTech([%createHelmetOfVision()])
+  responseFeatherWeightChainmail = $ %containTech([%createFeatherWeightChainmail()])
+  responseElitePlatemail = $ %containTech([%createElitePlatemail()])
+  responseElixirOfPersuasion = $ %containTech([%createHealingSalve()])
+  responseElixirOfPhysicalProwess = $ %containTech([%createHealingSalve()])
+  responseLiquidOfAwareness = $ %containTech([%createLiquidOfAwareness()])
+  responseTonicOfIncreasedReflexes = $ %containTech([%createTonicOfIncreasedReflexes()])
+  responseMindMarvel = $ %containTech([%createMindMarvel()])
+  responseEnergizer = $ %containTech([%createEnergizer()])
+  responseRevitalizer = $ %containTech([%createRevitalizer()])
 
 # let
 #   gnome = %createGnome()
@@ -346,6 +403,174 @@ when isMainModule:
   template handlerBackgroundWildHalfOgre() =
     resp(Http200, initHeaders(), responseWildHalfOgre)
 
+  template handlerTech() =
+    resp(Http200, initHeaders(), responseTech)
+
+  template handlerTechHealingSalve() =
+    resp(Http200, initHeaders(), responseHealingSalve)
+
+  template handlerTechFatigueRestorer() =
+    resp(Http200, initHeaders(), responseFatigueRestorer)
+
+  template handlerTechPoisonCure() =
+    resp(Http200, initHeaders(), responsePoisonCure)
+
+  template handlerTechFatigueLimiter() =
+    resp(Http200, initHeaders(), responseFatigueLimiter)
+
+  template handlerTechAccelerateHealing() =
+    resp(Http200, initHeaders(), responseAccelerateHealing)
+
+  template handlerTechWonderDrug() =
+    resp(Http200, initHeaders(), responseWonderDrug)
+
+  template handlerTechCureAll() =
+    resp(Http200, initHeaders(), responseCureAll)
+
+  template handlerTechStrongPoison() =
+    resp(Http200, initHeaders(), responseStrongPoison)
+
+  template handlerTechCharges() =
+    resp(Http200, initHeaders(), responseCharges)
+
+  template handlerTechAnimalScent() =
+    resp(Http200, initHeaders(), responseAnimalScent)
+
+  template handlerTechCorrosiveAcid() =
+    resp(Http200, initHeaders(), responseCorrosiveAcid)
+
+  template handlerTechHallucinate() =
+    resp(Http200, initHeaders(), responseHallucinate)
+
+  template handlerTechParalyzer() =
+    resp(Http200, initHeaders(), responseParalyzer)
+
+  template handlerTechAnaesthisizer() =
+    resp(Http200, initHeaders(), responseAnaesthisizer)
+
+  template handlerTechChargedRing() =
+    resp(Http200, initHeaders(), responseChargedRing)
+
+  template handlerTechFlowSpectrometer() =
+    resp(Http200, initHeaders(), responseFlowSpectrometer)
+
+  template handlerTechShockingTraffic() =
+    resp(Http200, initHeaders(), responseShockingTraffic)
+
+  template handlerTechChapeuOfMagneticInversion() =
+    resp(Http200, initHeaders(), responseChapeuOfMagneticInversion)
+
+  template handlerTechHealingJacket() =
+    resp(Http200, initHeaders(), responseHealingJacket)
+
+  template handlerTechTeslaRod() =
+    resp(Http200, initHeaders(), responseTeslaRod)
+
+  template handlerTechMolotovCocktail() =
+    resp(Http200, initHeaders(), responseMolotovCocktail)
+
+  template handlerTechFlashGrenade() =
+    resp(Http200, initHeaders(), responseFlashGrenade)
+
+  template handlerTechSmokeGrenade() =
+    resp(Http200, initHeaders(), responseSmokeGrenade)
+
+  template handlerTechStunGrenade() =
+    resp(Http200, initHeaders(), responseStunGrenade)
+
+  template handlerTechExplosiveGrenade() =
+    resp(Http200, initHeaders(), responseExplosiveGrenade)
+
+  template handlerTechFireObstruction() =
+    resp(Http200, initHeaders(), responseFireObstruction)
+
+  template handlerTechDynamite() =
+    resp(Http200, initHeaders(), responseDynamite)
+
+  template handlerTechHandCraftFlintlock() =
+    resp(Http200, initHeaders(), responseHandCraftFlintlock)
+
+  template handlerTechFineRevolver() =
+    resp(Http200, initHeaders(), responseFineRevolver)
+
+  template handlerTechRepeaterRifle() =
+    resp(Http200, initHeaders(), responseRepeaterRifle)
+
+  template handlerTechHushedRevolver() =
+    resp(Http200, initHeaders(), responseHushedRevolver)
+
+  template handlerTechLookingGlassRifle() =
+    resp(Http200, initHeaders(), responseLookingGlassRifle)
+
+  template handlerTechHandCannon() =
+    resp(Http200, initHeaders(), responseHandCannon)
+
+  template handlerTechElephantGun() =
+    resp(Http200, initHeaders(), responseElephantGun)
+
+  template handlerTechSpikeTrap() =
+    resp(Http200, initHeaders(), responseSpikeTrap)
+
+  template handlerTechTrapSpringer() =
+    resp(Http200, initHeaders(), responseTrapSpringer)
+
+  template handlerTechAutoSkeletonKey() =
+    resp(Http200, initHeaders(), responseAutoSkeletonKey)
+
+  template handlerTechEyeGear() =
+    resp(Http200, initHeaders(), responseEyeGear)
+
+  template handlerTechBearTrap() =
+    resp(Http200, initHeaders(), responseBearTrap)
+
+  template handlerTechClockworDecoy() =
+    resp(Http200, initHeaders(), responseClockworDecoy)
+
+  template handlerTechMechanizedArachnid() =
+    resp(Http200, initHeaders(), responseMechanizedArachnid)
+
+  template handlerTechPureOre() =
+    resp(Http200, initHeaders(), responsePureOre)
+
+  template handlerTechBalancedSword() =
+    resp(Http200, initHeaders(), responseBalancedSword)
+
+  template handlerTechFeatherWeightAxe() =
+    resp(Http200, initHeaders(), responseFeatherWeightAxe)
+
+  template handlerTechDwarvenGauntlets() =
+    resp(Http200, initHeaders(), responseDwarvenGauntlets)
+
+  template handlerTechHelmetOfVision() =
+    resp(Http200, initHeaders(), responseHelmetOfVision)
+
+  template handlerTechFeatherWeightChainmail() =
+    resp(Http200, initHeaders(), responseFeatherWeightChainmail)
+
+  template handlerTechElitePlatemail() =
+    resp(Http200, initHeaders(), responseElitePlatemail)
+
+  template handlerTechElixirOfPersuasion() =
+    resp(Http200, initHeaders(), responseElixirOfPersuasion)
+
+  template handlerTechElixirOfPhysicalProwess() =
+    resp(Http200, initHeaders(), responseElixirOfPhysicalProwess)
+
+  template handlerTechLiquidOfAwareness() =
+    resp(Http200, initHeaders(), responseLiquidOfAwareness)
+
+  template handlerTechTonicOfIncreasedReflexes() =
+    resp(Http200, initHeaders(), responseTonicOfIncreasedReflexes)
+
+  template handlerTechMindMarvel() =
+    resp(Http200, initHeaders(), responseMindMarvel)
+
+  template handlerTechEnergizer() =
+    resp(Http200, initHeaders(), responseEnergizer)
+
+  template handlerTechRevitalizer() =
+    resp(Http200, initHeaders(), responseRevitalizer)
+
   settings:
     port = Port(serverPort)
     appName = ""
@@ -500,3 +725,115 @@ when isMainModule:
       handlerBackgroundToughHide()
     get "/background/WildHalfOgre":
       handlerBackgroundWildHalfOgre()
+    get "/tech":
+      handlerTech()
+    get "/tech/HealingSalve":
+      handlerTechHealingSalve()
+    get "/tech/FatigueRestorer":
+      handlerTechFatigueRestorer()
+    get "/tech/PoisonCure":
+      handlerTechPoisonCure()
+    get "/tech/FatigueLimiter":
+      handlerTechFatigueLimiter()
+    get "/tech/AccelerateHealing":
+      handlerTechAccelerateHealing()
+    get "/tech/WonderDrug":
+      handlerTechWonderDrug()
+    get "/tech/CureAll":
+      handlerTechCureAll()
+    get "/tech/StrongPoison":
+      handlerTechStrongPoison()
+    get "/tech/Charges":
+      handlerTechCharges()
+    get "/tech/AnimalScent":
+      handlerTechAnimalScent()
+    get "/tech/CorrosiveAcid":
+      handlerTechCorrosiveAcid()
+    get "/tech/Hallucinate":
+      handlerTechHallucinate()
+    get "/tech/Paralyzer":
+      handlerTechParalyzer()
+    get "/tech/Anaesthisizer":
+      handlerTechAnaesthisizer()
+    get "/tech/ChargedRing":
+      handlerTechChargedRing()
+    get "/tech/FlowSpectrometer":
+      handlerTechFlowSpectrometer()
+    get "/tech/ShockingTraffic":
+      handlerTechShockingTraffic()
+    get "/tech/ChapeuOfMagneticInversion":
+      handlerTechChapeuOfMagneticInversion()
+    get "/tech/HealingJacket":
+      handlerTechHealingJacket()
+    get "/tech/TeslaRod":
+      handlerTechTeslaRod()
+    get "/tech/MolotovCocktail":
+      handlerTechMolotovCocktail()
+    get "/tech/FlashGrenade":
+      handlerTechFlashGrenade()
+    get "/tech/SmokeGrenade":
+      handlerTechSmokeGrenade()
+    get "/tech/StunGrenade":
+      handlerTechStunGrenade()
+    get "/tech/ExplosiveGrenade":
+      handlerTechExplosiveGrenade()
+    get "/tech/FireObstruction":
+      handlerTechFireObstruction()
+    get "/tech/Dynamite":
+      handlerTechDynamite()
+    get "/tech/HandCraftFlintlock":
+      handlerTechHandCraftFlintlock()
+    get "/tech/FineRevolver":
+      handlerTechFineRevolver()
+    get "/tech/RepeaterRifle":
+      handlerTechRepeaterRifle()
+    get "/tech/HushedRevolver":
+      handlerTechHushedRevolver()
+    get "/tech/LookingGlassRifle":
+      handlerTechLookingGlassRifle()
+    get "/tech/HandCannon":
+      handlerTechHandCannon()
+    get "/tech/ElephantGun":
+      handlerTechElephantGun()
+    get "/tech/SpikeTrap":
+      handlerTechSpikeTrap()
+    get "/tech/TrapSpringer":
+      handlerTechTrapSpringer()
+    get "/tech/AutoSkeletonKey":
+      handlerTechAutoSkeletonKey()
+    get "/tech/EyeGear":
+      handlerTechEyeGear()
+    get "/tech/BearTrap":
+      handlerTechBearTrap()
+    get "/tech/ClockworDecoy":
+      handlerTechClockworDecoy()
+    get "/tech/MechanizedArachnid":
+      handlerTechMechanizedArachnid()
+    get "/tech/PureOre":
+      handlerTechPureOre()
+    get "/tech/BalancedSword":
+      handlerTechBalancedSword()
+    get "/tech/FeatherWeightAxe":
+      handlerTechFeatherWeightAxe()
+    get "/tech/DwarvenGauntlets":
+      handlerTechDwarvenGauntlets()
+    get "/tech/HelmetOfVision":
+      handlerTechHelmetOfVision()
+    get "/tech/FeatherWeightChainmail":
+      handlerTechFeatherWeightChainmail()
+    get "/tech/ElitePlatemail":
+      handlerTechElitePlatemail()
+    get "/tech/ElixirOfPersuasion":
+      handlerTechElixirOfPersuasion()
+    get "/tech/ElixirOfPhysicalProwess":
+      handlerTechElixirOfPhysicalProwess()
+    get "/tech/LiquidOfAwareness":
+      handlerTechLiquidOfAwareness()
+    get "/tech/TonicOfIncreasedReflexes":
+      handlerTechTonicOfIncreasedReflexes()
+    get "/tech/MindMarvel":
+      handlerTechMindMarvel()
+    get "/tech/Energizer":
+      handlerTechEnergizer()
+    get "/tech/Revitalizer":
+      handlerTechRevitalizer()
