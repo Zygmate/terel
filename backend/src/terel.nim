@@ -161,16 +161,6 @@ const
   responseEnergizer = $ %containTech([%createEnergizer()])
   responseRevitalizer = $ %containTech([%createRevitalizer()])
 
-# let
-#   gnome = %createGnome()
-#   dwarf = %createDwarf()
-#   elf = %createGnome()
-#   human = %createHuman()
-#   halfling = %createHalfling()
-#   halfOgre = %createHalfOgre()
-#   halfOrc = %createHalfOrc()
-#   halfElf = %createHalfElf()
-
 let logger = getLogger("terel")
 
 proc initHeaders: seq[(string, string)] =
@@ -572,7 +562,7 @@ when isMainModule:
     resp(Http200, initHeaders(), responseRevitalizer)
 
   settings:
-    port = Port(serverPort)
+    port = serverPort.Port
     appName = ""
     bindAddr = "0.0.0.0"
 

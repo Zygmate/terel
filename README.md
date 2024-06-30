@@ -17,6 +17,10 @@ This is a Character Builder end-user application, useful for players of [Arcanum
 
 This work is not in any way affiliated or endorsed by the original authors of the game. This is a hobby project for your personal use.
 
+## Disclaimer
+
+This project is still in early development. Use at your own risk. The resulting game files from this project might break the game and you might lose all your progress after playing for a while. Save game files might be corrupted and in-game instabilities might occur.
+
 ## Why
 The community asked for a character builder, so here it is.
 
